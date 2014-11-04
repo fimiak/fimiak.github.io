@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+
+$primary: #ff005e;
+$light1: lighten(adjust-hue($primary, 5), 10%);
+$light2: lighten(adjust-hue($primary, 7.5), 15%);
+$light3: lighten(adjust-hue($primary, 10), 20%);
+$light4: lighten(adjust-hue($primary, 12.5), 25%);
+$dark1: darken(adjust-hue($primary, -5), 10%);
+$dark2: darken(adjust-hue($primary, -7.5), 15%);
+$dark3: darken(adjust-hue($primary, -10), 20%);
+$dark4: darken(adjust-hue($primary, -12.5), 25%);
+$black: #333;
+$text: #fff;
+
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(#a8a6a7, #878687);
+	font-family: 'Quicksand';
+	font-weight: 300;
+	font-size: 16px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+	color: $black;
+	line-height: .5em;
+}
+
+p {
+	font-size: 1.3em;
+	color: $text;
+}
+
+a {
+	color: $text;
+}
+
+table {
+	margin-bottom: 20px;
+	display: inline-block;
+	border-collapse: collapse;
+	border: 2px solid $black;
+}
+
+td {
+	border: 1px solid $black;
+	padding: 0px 0px;
+	font-size: 2em;
+}
+
+input {
+	border: none;
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 1em;
+	width: 20px;
+	background: none;
+	font-family: "Quicksand";
+	text-align: center;
+	transition: all .5s ease-in-out;
+	outline: none;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+input:focus {
+	border: 1px solid $light3;
+	background-color: rgba($primary, 0.7);
+	box-shadow: 0 0 5px $primary;
+}
+
+.one {
+	background-color: $light4;
+}
+
+.two {
+	background-color: $light3;
+}
+
+.three {
+	background-color: $light2;
+}
+
+.four {
+	background-color: $light1;
+}
+
+.five {
+	background-color: $primary;
+}
+
+.six {
+	background-color: $dark1;
+}
+
+.seven {
+	background-color: $dark2;
+}
+
+.eight {
+	background-color: $dark3;
+}
+
+.nine {
+	background-color: $dark4;
+}
+
+.botbuffer {
+	border-bottom: 2px solid $black;
+}
+
+.vertbuffer {
+	border-right: 2px solid $black;
+}
+
+footer p {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+footer a {
+	transition: .2s;
+	margin: 10px;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: $primary;
+}
+
+@media (max-width: 1000px) {
+
+h1 {
+	font-size: 2.4em;
+}
+
+p {
+	font-size: 1em;
+}
+
+td {
+	font-size: 1.6em;
+	padding: 4px 8px;
+}
+
+input {
+	padding: 4px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+table {
+	margin-bottom: 10px;
+	padding: 2px;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+p {
+	font-size: .8em;
+}
+
+td {
+	font-size: 1.1em;
+	padding: 3px 6px;
+}
+
+input {
+	padding: 2px;
+}
+
+footer p {
+	font-size: .8em;
+	font-weight: 400;
+}
+}

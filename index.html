@@ -2,14 +2,125 @@
 <html>
 <head>
 <title>James Greve Sudoku</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 
 <body>
 <h1>Sudoku</h1>
+<p>The classic puzzle game written in Javascript.</p>
+<p><a href="https://github.com/fimiak/fimiak.github.io">Source Code</a></p>
+<table>
+<tr>
+	<td class="one"><input id="a1" maxlength="1"></td>
+	<td class="one"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer one"><input id="a3" maxlength="1"></td>
+	<td class="one"><input id="a4" maxlength="1"></td>
+	<td class="one"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer one"><input id="a6" maxlength="1"></td>
+	<td class="one"><input id="a7" maxlength="1"></td>
+	<td class="one"><input id="a8" maxlength="1"></td>
+	<td class="one"><input id="a9" maxlength="1"></td>
+</tr>
+<tr>
+	<td class="two"><input id="a1" maxlength="1"></td>
+	<td class="two"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer two"><input id="a3" maxlength="1"></td>
+	<td class="two"><input id="a4" maxlength="1"></td>
+	<td class="two"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer two"><input id="a6" maxlength="1"></td>
+	<td class="two"><input id="a7" maxlength="1"></td>
+	<td class="two"><input id="a8" maxlength="1"></td>
+	<td class="two"><input id="a9" maxlength="1"></td>
+</tr>
+<tr class="botbuffer">
+	<td class="three"><input id="a1" maxlength="1"></td>
+	<td class="three"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer three"><input id="a3" maxlength="1"></td>
+	<td class="three"><input id="a4" maxlength="1"></td>
+	<td class="three"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer three"><input id="a6" maxlength="1"></td>
+	<td class="three"><input id="a7" maxlength="1"></td>
+	<td class="three"><input id="a8" maxlength="1"></td>
+	<td class="three"><input id="a9" maxlength="1"></td>
+</tr>
+<tr>
+	<td class="four"><input id="a1" maxlength="1"></td>
+	<td class="four"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer four"><input id="a3" maxlength="1"></td>
+	<td class="four"><input id="a4" maxlength="1"></td>
+	<td class="four"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer four"><input id="a6" maxlength="1"></td>
+	<td class="four"><input id="a7" maxlength="1"></td>
+	<td class="four"><input id="a8" maxlength="1"></td>
+	<td class="four"><input id="a9" maxlength="1"></td>
+</tr>
+<tr>
+	<td class="five"><input id="a1" maxlength="1"></td>
+	<td class="five"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer five"><input id="a3" maxlength="1"></td>
+	<td class="five"><input id="a4" maxlength="1"></td>
+	<td class="five"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer five"><input id="a6" maxlength="1"></td>
+	<td class="five"><input id="a7" maxlength="1"></td>
+	<td class="five"><input id="a8" maxlength="1"></td>
+	<td class="five"><input id="a9" maxlength="1"></td>
+</tr>
+<tr class="botbuffer">
+	<td class="six"><input id="a1" maxlength="1"></td>
+	<td class="six"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer six"><input id="a3" maxlength="1"></td>
+	<td class="six"><input id="a4" maxlength="1"></td>
+	<td class="six"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer six"><input id="a6" maxlength="1"></td>
+	<td class="six"><input id="a7" maxlength="1"></td>
+	<td class="six"><input id="a8" maxlength="1"></td>
+	<td class="six"><input id="a9" maxlength="1"></td>
+</tr>
+<tr>
+	<td class="seven"><input id="a1" maxlength="1"></td>
+	<td class="seven"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer seven"><input id="a3" maxlength="1"></td>
+	<td class="seven"><input id="a4" maxlength="1"></td>
+	<td class="seven"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer seven"><input id="a6" maxlength="1"></td>
+	<td class="seven"><input id="a7" maxlength="1"></td>
+	<td class="seven"><input id="a8" maxlength="1"></td>
+	<td class="seven"><input id="a9" maxlength="1"></td>
+</tr>
+<tr>
+	<td class="eight"><input id="a1" maxlength="1"></td>
+	<td class="eight"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer eight"><input id="a3" maxlength="1"></td>
+	<td class="eight"><input id="a4" maxlength="1"></td>
+	<td class="eight"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer eight"><input id="a6" maxlength="1"></td>
+	<td class="eight"><input id="a7" maxlength="1"></td>
+	<td class="eight"><input id="a8" maxlength="1"></td>
+	<td class="eight"><input id="a9" maxlength="1"></td>
+</tr>
+<tr class="botbuffer">
+	<td class="nine"><input id="a1" maxlength="1"></td>
+	<td class="nine"><input id="a2" maxlength="1"></td>
+	<td class="vertbuffer nine"><input id="a3" maxlength="1"></td>
+	<td class="nine"><input id="a4" maxlength="1"></td>
+	<td class="nine"><input id="a5" maxlength="1"></td>
+	<td class="vertbuffer nine"><input id="a6" maxlength="1"></td>
+	<td class="nine"><input id="a7" maxlength="1"></td>
+	<td class="nine"><input id="a8" maxlength="1"></td>
+	<td class="nine"><input id="a9" maxlength="1"></td>
+</tr>
+</table>
 
+<footer>
+<p>James Greve 2014</p>
+<a href="https://twitter.com/@tjgreve" target="_blank">Twitter <i class="fa fa-twitter fa-2x"></i></a>
+<a href="https://github.com/fimiak" target="_blank">Github<i class="fa fa-github fa-2x"></i></a>
+<a href="https://www.linkedin.com/in/tylerjamesgreve" target="_blank"> Linked<i class="fa fa-linkedin-square fa-2x"></i></a>
 
+</footer>
+<script src="jquery-2.1.1.min.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>

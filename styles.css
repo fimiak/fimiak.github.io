@@ -1,3 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+html {
+  height: 100%; }
+
 body {
-	background-color: #a8a6a7;
-}
+  background: linear-gradient(#a8a6a7, #878687);
+  font-family: 'Quicksand';
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center; }
+
+h1 {
+  font-size: 3em;
+  color: #333;
+  line-height: .5em; }
+
+p {
+  font-size: 1.3em;
+  color: #fff; }
+
+a {
+  color: #fff; }
+
+table {
+  margin-bottom: 20px;
+  display: inline-block;
+  border-collapse: collapse;
+  border: 2px solid #333; }
+
+td {
+  border: 1px solid #333;
+  padding: 0px 0px;
+  font-size: 2em; }
+
+input {
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1em;
+  width: 20px;
+  background: none;
+  font-family: "Quicksand";
+  text-align: center;
+  transition: all .5s ease-in-out;
+  outline: none;
+  border: 1px solid transparent; }
+
+input:focus {
+  border: 1px solid #ff6685;
+  background-color: rgba(255, 0, 94, 0.7);
+  box-shadow: 0 0 5px #ff005e; }
+
+.one {
+  background-color: #ff8094; }
+
+.two {
+  background-color: #ff6685; }
+
+.three {
+  background-color: #ff4d78; }
+
+.four {
+  background-color: #ff336d; }
+
+.five {
+  background-color: #ff005e; }
+
+.six {
+  background-color: #cc005c; }
+
+.seven {
+  background-color: #b30058; }
+
+.eight {
+  background-color: #990052; }
+
+.nine {
+  background-color: #80004a; }
+
+.botbuffer {
+  border-bottom: 2px solid #333; }
+
+.vertbuffer {
+  border-right: 2px solid #333; }
+
+footer p {
+  font-size: 1em;
+  font-weight: 400; }
+
+footer a {
+  transition: .2s;
+  margin: 10px;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #ff005e; }
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2.4em; }
+
+  p {
+    font-size: 1em; }
+
+  td {
+    font-size: 1.6em;
+    padding: 4px 8px; }
+
+  input {
+    padding: 4px; } }
+@media (max-width: 768px) {
+  table {
+    margin-bottom: 10px;
+    padding: 2px; }
+
+  h1 {
+    font-size: 1.8em; }
+
+  p {
+    font-size: .8em; }
+
+  td {
+    font-size: 1.1em;
+    padding: 3px 6px; }
+
+  input {
+    padding: 2px; }
+
+  footer p {
+    font-size: .8em;
+    font-weight: 400; } }
+
+/*# sourceMappingURL=styles.css.map */
