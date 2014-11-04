@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
-
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 $primary: #ff005e;
 $light1: lighten(adjust-hue($primary, 5), 10%);
@@ -14,25 +14,36 @@ $black: #333;
 $text: #fff;
 
 html {
-	height: 100%;
+	padding: none;
 }
 
 body {
 	background: linear-gradient(#a8a6a7, #878687);
+	background-attachment: fixed;
 	font-family: 'Quicksand';
 	font-weight: 300;
 	font-size: 16px;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 .clear {
 	clear: both
 }
 
+header {
+	background-color: #080715;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
 h1 {
 	font-size: 3em;
-	color: $black;
-	line-height: .5em;
+	color: $text;
+	font-family: "Ubuntu";
+	margin: 0;
 }
 
 p {
@@ -52,18 +63,21 @@ a:hover {
 
 button {
 	background: #B9B7B8;
-	border: none;
-	font-size: 1.8em;
-	color: #fff;
+	border: 1px solid #555;
+	font-size: 1.5em;
+	color: #555;
 	font-family: 'Quicksand';
-	padding: 5px 10px;
-	margin: 5px 5px;
+	padding: 10px 15px;
+	margin: 20px 0px;
 	font-weight: 300;
-	transition: .3s;
+	transition: .2s;
 }
 
-button:hover, button:focus {
-	background: #818080;
+button:hover {
+	background: #ccc;
+}
+
+button:focus {
 	outline: none;
 }
 
@@ -144,6 +158,10 @@ input:focus {
 	border-right: 2px solid $black;
 }
 
+footer {
+	padding: 20px;
+}
+
 footer p {
 	font-size: 1em;
 	font-weight: 400;
@@ -155,6 +173,10 @@ footer a {
 
 @media (max-width: 1000px) {
 
+header {
+	margin-bottom: 10px;
+}
+
 h1 {
 	font-size: 2.4em;
 }
@@ -165,27 +187,31 @@ p {
 
 td {
 	font-size: 1.6em;
-	padding: 4px 8px;
 }
 
 button {
 	font-size: 1.3em;
+	margin: 15px 0;
 }
 
 input {
-	padding: 4px;
+	padding: 10px;
 }
 }
 
 @media (max-width: 768px) {
 
+header {
+	margin-bottom: 0;
+}
+
 table {
-	margin-bottom: 10px;
-	padding: 2px;
+	margin-bottom: 5px;
 }
 
 button {
 	font-size: 1em;
+	margin: 10px 0;
 }
 
 h1 {
@@ -193,16 +219,15 @@ h1 {
 }
 
 p {
-	font-size: .8em;
+	font-size: .9em;
 }
 
 td {
 	font-size: 1.1em;
-	padding: 3px 6px;
 }
 
 input {
-	padding: 2px;
+	padding: 5px;
 }
 
 footer p {
