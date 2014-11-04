@@ -25,6 +25,10 @@ body {
 	text-align: center;
 }
 
+.clear {
+	clear: both
+}
+
 h1 {
 	font-size: 3em;
 	color: $black;
@@ -38,6 +42,29 @@ p {
 
 a {
 	color: $text;
+	transition: .2s;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $primary;
+}
+
+button {
+	background: #B9B7B8;
+	border: none;
+	font-size: 1.8em;
+	color: #fff;
+	font-family: 'Quicksand';
+	padding: 5px 10px;
+	margin: 5px 5px;
+	font-weight: 300;
+	transition: .3s;
+}
+
+button:hover, button:focus {
+	background: #818080;
+	outline: none;
 }
 
 table {
@@ -123,13 +150,7 @@ footer p {
 }
 
 footer a {
-	transition: .2s;
 	margin: 10px;
-	text-decoration: none;
-}
-
-footer a:hover {
-	color: $primary;
 }
 
 @media (max-width: 1000px) {
@@ -147,10 +168,13 @@ td {
 	padding: 4px 8px;
 }
 
+button {
+	font-size: 1.3em;
+}
+
 input {
 	padding: 4px;
 }
-
 }
 
 @media (max-width: 768px) {
@@ -158,6 +182,10 @@ input {
 table {
 	margin-bottom: 10px;
 	padding: 2px;
+}
+
+button {
+	font-size: 1em;
 }
 
 h1 {

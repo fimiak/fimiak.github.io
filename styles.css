@@ -9,6 +9,9 @@ body {
   font-size: 16px;
   text-align: center; }
 
+.clear {
+  clear: both; }
+
 h1 {
   font-size: 3em;
   color: #333;
@@ -19,7 +22,31 @@ p {
   color: #fff; }
 
 a {
-  color: #fff; }
+  color: #fff;
+  transition: .2s;
+  text-decoration: none; }
+
+a:hover {
+  color: #ff005e; }
+
+button {
+  background: #B9B7B8;
+  border: none;
+  font-size: 1.8em;
+  color: #fff;
+  font-family: 'Quicksand';
+  padding: 5px 10px;
+  margin: 5px 5px;
+  font-weight: 300;
+  transition: .3s; }
+
+button:hover, button:focus {
+  background: #818080;
+  outline: none; }
+
+button:active {
+  background: $primary;
+}
 
 table {
   margin-bottom: 20px;
@@ -88,12 +115,7 @@ footer p {
   font-weight: 400; }
 
 footer a {
-  transition: .2s;
-  margin: 10px;
-  text-decoration: none; }
-
-footer a:hover {
-  color: #ff005e; }
+  margin: 10px; }
 
 @media (max-width: 1000px) {
   h1 {
@@ -106,12 +128,18 @@ footer a:hover {
     font-size: 1.6em;
     padding: 4px 8px; }
 
+  button {
+    font-size: 1.3em; }
+
   input {
     padding: 4px; } }
 @media (max-width: 768px) {
   table {
     margin-bottom: 10px;
     padding: 2px; }
+
+  button {
+    font-size: 1em; }
 
   h1 {
     font-size: 1.8em; }
