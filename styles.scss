@@ -14,7 +14,7 @@ $black: #333;
 $text: #fff;
 
 html {
-	padding: none;
+	padding: 0;
 }
 
 body {
@@ -35,8 +35,8 @@ body {
 header {
 	background-color: #080715;
 	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 h1 {
@@ -49,6 +49,7 @@ h1 {
 p {
 	font-size: 1.3em;
 	color: $text;
+	margin: 10px 0;
 }
 
 a {
@@ -67,7 +68,7 @@ button {
 	font-size: 1.5em;
 	color: #555;
 	font-family: 'Quicksand';
-	padding: 10px 15px;
+	padding: 5px 7.5px;
 	margin: 20px 0px;
 	font-weight: 300;
 	transition: .2s;
@@ -174,7 +175,7 @@ footer a {
 @media (max-width: 1000px) {
 
 header {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 h1 {
@@ -192,6 +193,7 @@ td {
 button {
 	font-size: 1.3em;
 	margin: 15px 0;
+	padding: 5px 7.5px;
 }
 
 input {
@@ -228,6 +230,10 @@ td {
 
 input {
 	padding: 5px;
+}
+
+footer {
+	padding: 10px;
 }
 
 footer p {

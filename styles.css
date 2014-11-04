@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 html {
-  padding: none; }
+  padding: 0; }
 
 body {
   background: linear-gradient(#a8a6a7, #878687);
@@ -19,8 +19,8 @@ body {
 header {
   background-color: #080715;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px; }
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
 
 h1 {
   font-size: 3em;
@@ -30,7 +30,8 @@ h1 {
 
 p {
   font-size: 1.3em;
-  color: #fff; }
+  color: #fff;
+  margin: 10px 0; }
 
 a {
   color: #fff;
@@ -46,7 +47,7 @@ button {
   font-size: 1.5em;
   color: #555;
   font-family: 'Quicksand';
-  padding: 10px 15px;
+  padding: 5px 7.5px;
   margin: 20px 0px;
   font-weight: 300;
   transition: .2s; }
@@ -131,7 +132,7 @@ footer a {
 
 @media (max-width: 1000px) {
   header {
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
 
   h1 {
     font-size: 2.4em; }
@@ -144,7 +145,8 @@ footer a {
 
   button {
     font-size: 1.3em;
-    margin: 15px 0; }
+    margin: 15px 0;
+    padding: 5px 7.5px; }
 
   input {
     padding: 10px; } }
@@ -170,6 +172,9 @@ footer a {
 
   input {
     padding: 5px; }
+
+  footer {
+    padding: 10px; }
 
   footer p {
     font-size: .8em;

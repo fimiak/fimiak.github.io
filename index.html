@@ -11,114 +11,120 @@
 <header>
 <h1>Sudoku</h1>
 <p>The classic puzzle game written in Javascript.<br>
-<a href="https://github.com/fimiak/fimiak.github.io">Source Code</a>
+<a href="https://github.com/fimiak/fimiak.github.io">Source Code</a></p>
 </header>
+
+<form>
 <button id="easy" onClick="inputNumber(board[0], 81)">Easy</button>
 <button id="medium" onClick="inputNumber(board[1], 81)">Medium</button>
-<button id="hard" onClick="inputNumber(board[2], 81">Hard</button>
+<button id="hard" onClick="inputNumber(board[2], 81)">Hard</button>
+<button id="clear" type="reset">Clear</button>
+<button id="solve" onClick="parent.solve()">Solve</button>
 <div class="clear"></div>
+
 <table>
 <tr>
-	<td class="one"><input id="a1" maxlength="1"></td>
-	<td class="one"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer one"><input id="a3" maxlength="1"></td>
-	<td class="one"><input id="a4" maxlength="1"></td>
-	<td class="one"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer one"><input id="a6" maxlength="1"></td>
-	<td class="one"><input id="a7" maxlength="1"></td>
-	<td class="one"><input id="a8" maxlength="1"></td>
-	<td class="one"><input id="a9" maxlength="1"></td>
+	<td class="one"><input id="0-0" maxlength="1"></td>
+	<td class="one"><input id="0-1" maxlength="1"></td>
+	<td class="vertbuffer one"><input id="0-2" maxlength="1"></td>
+	<td class="one"><input id="0-3" maxlength="1"></td>
+	<td class="one"><input id="0-4" maxlength="1"></td>
+	<td class="vertbuffer one"><input id="0-5" maxlength="1"></td>
+	<td class="one"><input id="0-6" maxlength="1"></td>
+	<td class="one"><input id="0-7" maxlength="1"></td>
+	<td class="one"><input id="0-8" maxlength="1"></td>
 </tr>
 <tr>
-	<td class="two"><input id="a1" maxlength="1"></td>
-	<td class="two"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer two"><input id="a3" maxlength="1"></td>
-	<td class="two"><input id="a4" maxlength="1"></td>
-	<td class="two"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer two"><input id="a6" maxlength="1"></td>
-	<td class="two"><input id="a7" maxlength="1"></td>
-	<td class="two"><input id="a8" maxlength="1"></td>
-	<td class="two"><input id="a9" maxlength="1"></td>
+	<td class="two"><input id="1-0" maxlength="1"></td>
+	<td class="two"><input id="1-1" maxlength="1"></td>
+	<td class="vertbuffer two"><input id="1-2" maxlength="1"></td>
+	<td class="two"><input id="1-3" maxlength="1"></td>
+	<td class="two"><input id="1-4" maxlength="1"></td>
+	<td class="vertbuffer two"><input id="1-5" maxlength="1"></td>
+	<td class="two"><input id="1-6" maxlength="1"></td>
+	<td class="two"><input id="1-7" maxlength="1"></td>
+	<td class="two"><input id="1-8" maxlength="1"></td>
 </tr>
 <tr class="botbuffer">
-	<td class="three"><input id="a1" maxlength="1"></td>
-	<td class="three"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer three"><input id="a3" maxlength="1"></td>
-	<td class="three"><input id="a4" maxlength="1"></td>
-	<td class="three"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer three"><input id="a6" maxlength="1"></td>
-	<td class="three"><input id="a7" maxlength="1"></td>
-	<td class="three"><input id="a8" maxlength="1"></td>
-	<td class="three"><input id="a9" maxlength="1"></td>
+	<td class="three"><input id="2-0" maxlength="1"></td>
+	<td class="three"><input id="2-1" maxlength="1"></td>
+	<td class="vertbuffer three"><input id="2-2" maxlength="1"></td>
+	<td class="three"><input id="2-3" maxlength="1"></td>
+	<td class="three"><input id="2-4" maxlength="1"></td>
+	<td class="vertbuffer three"><input id="2-5" maxlength="1"></td>
+	<td class="three"><input id="2-6" maxlength="1"></td>
+	<td class="three"><input id="2-7" maxlength="1"></td>
+	<td class="three"><input id="2-8" maxlength="1"></td>
 </tr>
 <tr>
-	<td class="four"><input id="a1" maxlength="1"></td>
-	<td class="four"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer four"><input id="a3" maxlength="1"></td>
-	<td class="four"><input id="a4" maxlength="1"></td>
-	<td class="four"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer four"><input id="a6" maxlength="1"></td>
-	<td class="four"><input id="a7" maxlength="1"></td>
-	<td class="four"><input id="a8" maxlength="1"></td>
-	<td class="four"><input id="a9" maxlength="1"></td>
+	<td class="four"><input id="3-0" maxlength="1"></td>
+	<td class="four"><input id="3-1" maxlength="1"></td>
+	<td class="vertbuffer four"><input id="3-2" maxlength="1"></td>
+	<td class="four"><input id="3-3" maxlength="1"></td>
+	<td class="four"><input id="3-4" maxlength="1"></td>
+	<td class="vertbuffer four"><input id="3-5" maxlength="1"></td>
+	<td class="four"><input id="3-6" maxlength="1"></td>
+	<td class="four"><input id="3-7" maxlength="1"></td>
+	<td class="four"><input id="3-8" maxlength="1"></td>
 </tr>
 <tr>
-	<td class="five"><input id="a1" maxlength="1"></td>
-	<td class="five"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer five"><input id="a3" maxlength="1"></td>
-	<td class="five"><input id="a4" maxlength="1"></td>
-	<td class="five"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer five"><input id="a6" maxlength="1"></td>
-	<td class="five"><input id="a7" maxlength="1"></td>
-	<td class="five"><input id="a8" maxlength="1"></td>
-	<td class="five"><input id="a9" maxlength="1"></td>
+	<td class="five"><input id="4-0" maxlength="1"></td>
+	<td class="five"><input id="4-1" maxlength="1"></td>
+	<td class="vertbuffer five"><input id="4-2" maxlength="1"></td>
+	<td class="five"><input id="4-3" maxlength="1"></td>
+	<td class="five"><input id="4-4" maxlength="1"></td>
+	<td class="vertbuffer five"><input id="4-5" maxlength="1"></td>
+	<td class="five"><input id="4-6" maxlength="1"></td>
+	<td class="five"><input id="4-7" maxlength="1"></td>
+	<td class="five"><input id="4-8" maxlength="1"></td>
 </tr>
 <tr class="botbuffer">
-	<td class="six"><input id="a1" maxlength="1"></td>
-	<td class="six"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer six"><input id="a3" maxlength="1"></td>
-	<td class="six"><input id="a4" maxlength="1"></td>
-	<td class="six"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer six"><input id="a6" maxlength="1"></td>
-	<td class="six"><input id="a7" maxlength="1"></td>
-	<td class="six"><input id="a8" maxlength="1"></td>
-	<td class="six"><input id="a9" maxlength="1"></td>
+	<td class="six"><input id="5-0" maxlength="1"></td>
+	<td class="six"><input id="5-1" maxlength="1"></td>
+	<td class="vertbuffer six"><input id="5-2" maxlength="1"></td>
+	<td class="six"><input id="5-3" maxlength="1"></td>
+	<td class="six"><input id="5-4" maxlength="1"></td>
+	<td class="vertbuffer six"><input id="5-5" maxlength="1"></td>
+	<td class="six"><input id="5-6" maxlength="1"></td>
+	<td class="six"><input id="5-7" maxlength="1"></td>
+	<td class="six"><input id="5-8" maxlength="1"></td>
 </tr>
 <tr>
-	<td class="seven"><input id="a1" maxlength="1"></td>
-	<td class="seven"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer seven"><input id="a3" maxlength="1"></td>
-	<td class="seven"><input id="a4" maxlength="1"></td>
-	<td class="seven"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer seven"><input id="a6" maxlength="1"></td>
-	<td class="seven"><input id="a7" maxlength="1"></td>
-	<td class="seven"><input id="a8" maxlength="1"></td>
-	<td class="seven"><input id="a9" maxlength="1"></td>
+	<td class="seven"><input id="6-0" maxlength="1"></td>
+	<td class="seven"><input id="6-1" maxlength="1"></td>
+	<td class="vertbuffer seven"><input id="6-2" maxlength="1"></td>
+	<td class="seven"><input id="6-3" maxlength="1"></td>
+	<td class="seven"><input id="6-4" maxlength="1"></td>
+	<td class="vertbuffer seven"><input id="6-5" maxlength="1"></td>
+	<td class="seven"><input id="6-6" maxlength="1"></td>
+	<td class="seven"><input id="6-7" maxlength="1"></td>
+	<td class="seven"><input id="6-8" maxlength="1"></td>
 </tr>
 <tr>
-	<td class="eight"><input id="a1" maxlength="1"></td>
-	<td class="eight"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer eight"><input id="a3" maxlength="1"></td>
-	<td class="eight"><input id="a4" maxlength="1"></td>
-	<td class="eight"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer eight"><input id="a6" maxlength="1"></td>
-	<td class="eight"><input id="a7" maxlength="1"></td>
-	<td class="eight"><input id="a8" maxlength="1"></td>
-	<td class="eight"><input id="a9" maxlength="1"></td>
+	<td class="eight"><input id="7-0" maxlength="1"></td>
+	<td class="eight"><input id="7-1" maxlength="1"></td>
+	<td class="vertbuffer eight"><input id="7-2" maxlength="1"></td>
+	<td class="eight"><input id="7-3" maxlength="1"></td>
+	<td class="eight"><input id="7-4" maxlength="1"></td>
+	<td class="vertbuffer eight"><input id="7-5" maxlength="1"></td>
+	<td class="eight"><input id="7-6" maxlength="1"></td>
+	<td class="eight"><input id="7-7" maxlength="1"></td>
+	<td class="eight"><input id="7-8" maxlength="1"></td>
 </tr>
 <tr class="botbuffer">
-	<td class="nine"><input id="a1" maxlength="1"></td>
-	<td class="nine"><input id="a2" maxlength="1"></td>
-	<td class="vertbuffer nine"><input id="a3" maxlength="1"></td>
-	<td class="nine"><input id="a4" maxlength="1"></td>
-	<td class="nine"><input id="a5" maxlength="1"></td>
-	<td class="vertbuffer nine"><input id="a6" maxlength="1"></td>
-	<td class="nine"><input id="a7" maxlength="1"></td>
-	<td class="nine"><input id="a8" maxlength="1"></td>
-	<td class="nine"><input id="a9" maxlength="1"></td>
+	<td class="nine"><input id="8-0" maxlength="1"></td>
+	<td class="nine"><input id="8-1" maxlength="1"></td>
+	<td class="vertbuffer nine"><input id="8-2" maxlength="1"></td>
+	<td class="nine"><input id="8-3" maxlength="1"></td>
+	<td class="nine"><input id="8-4" maxlength="1"></td>
+	<td class="vertbuffer nine"><input id="8-5" maxlength="1"></td>
+	<td class="nine"><input id="8-6" maxlength="1"></td>
+	<td class="nine"><input id="8-7" maxlength="1"></td>
+	<td class="nine"><input id="8-8" maxlength="1"></td>
 </tr>
 </table>
-<div id="status"></div>
+</form>
+<div id="status">Enjoy your game!</div>
 <footer>
 <p>James Greve 2014</p>
 <a href="https://twitter.com/@tjgreve" target="_blank">Twitter <i class="fa fa-twitter fa-2x"></i></a>
