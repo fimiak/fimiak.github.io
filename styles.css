@@ -120,6 +120,9 @@ input:focus {
 .vertbuffer {
   border-right: 2px solid #333; }
 
+.status {
+  font-weight: 400; }
+
 footer {
   padding: 20px; }
 
