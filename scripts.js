@@ -1,12 +1,36 @@
+$('#easy').click(function() {
+	inputNumber(board[0], 81)
+	status("Easy Game Started")
+});
+$('#medium').click(function() {
+	inputNumber(board[1], 81)
+	status("Medium Game Started")
+});
+$('#hard').click(function() {
+	inputNumber(board[2], 81)
+	status("Hard Game Started")
+});
+$('#clear').click(function() {
+	inputNumber(board[3], 81)
+	status("Game Cleared")
+});
+$('#solve').click(function() {
+	solve()
+});
+
+
+// Beginning of Game Code
+
+//Basic Variables
 var sudoku = new Array();
 var test_pos = new Array(81);
 var board = new Array(81);
 var val_col = new Array(9);
-var limiters = new Array(81); //
+var limiters = new Array(81);
 
 
 for(var x = 0; x < 81; x++) {
-	limiters[x] = new Array(6);
+	limiters[x] = new Array(8);
 }
 
 // The different difficulties will be drawn from these arrays. Presets drawn from websudoku.com.
@@ -17,10 +41,14 @@ board[1] = new Array(81);
 board[1] = [0,3,0,0,4,0,2,0,0,8,7,0,9,0,1,0,0,6,0,0,6,0,0,0,0,0,0,0,1,0,6,0,0,0,0,8,4,0,9,0,0,0,6,0,2,2,0,0,0,0,8,0,1,0,0,0,0,0,0,0,3,0,0,3,0,0,1,0,2,0,6,4,0,0,4,0,3,0,0,5,0];
 board[2] = new Array(81);
 board[2] = [0,0,0,0,0,0,0,6,0,0,0,0,0,0,7,8,1,0,0,0,2,5,8,0,0,4,3,2,0,0,0,0,3,0,5,6,0,0,0,0,4,0,0,0,0,5,4,0,2,0,0,0,0,1,8,7,0,0,5,4,3,0,0,0,2,1,3,0,0,0,0,0,0,5,0,0,0,0,0,0,0];
+board[3] = new Array(81);
+board[3] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 function status(text) {
 	document.getElementById("status").innerHTML = text;
 }
+
+//Checking input from the game board
 
 function makeBoard() {
 	var x;
@@ -36,6 +64,12 @@ function makeBoard() {
 			sudoku[r*9+c] = Number(x);
 		}
 	return true;
+}
+
+function clear() {
+	var x;
+	x = document.getElementById(r+"-"+c).value;
+	document.getElementById()
 }
 
 function rules(pos) {
@@ -68,6 +102,7 @@ function rules(pos) {
 		}
 	}
 }
+
 
 function validate(pos) {
 	var r_sum;
@@ -122,6 +157,8 @@ function check(pos, s, val) {
 	return true;
 }
 
+//Check validation & limiters
+
 function solve_r(s) {
 	if(s == 81) {
 		if(validate(test_pos) == 1)
@@ -145,7 +182,7 @@ function solve_r(s) {
 }
 
 
-// Enter presets into board.
+// Enter array of numbers into board.
 
 function inputNumber(pos, end) {
 	for(var x = 0; x < end; x++) {
@@ -159,7 +196,7 @@ function inputNumber(pos, end) {
 }
 
 
-// This function called to automatically solve the board.
+// Call this function to solve the board.
 function solve() {
 
 	status("Solving Sudoku");
@@ -172,6 +209,8 @@ function solve() {
 		inputNumber(test_pos, 81);
 	}
 	else {
-		status("No Solution");
+		status("Invalid solution");
 	}
 }
+
+

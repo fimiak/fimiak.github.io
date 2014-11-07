@@ -12,13 +12,15 @@
 <h1>Sudoku</h1>
 <p>The classic puzzle game written in Javascript.<br>
 <a href="https://github.com/fimiak/fimiak.github.io">Source Code</a></p>
+<a href="https://twitter.com/@tjgreve" target="_blank">Twitter <i class="fa fa-twitter fa-2x"></i></a>
+<a href="https://github.com/fimiak" target="_blank">Github<i class="fa fa-github fa-2x"></i></a>
+<a href="https://www.linkedin.com/in/tylerjamesgreve" target="_blank"> Linked<i class="fa fa-linkedin-square fa-2x"></i></a>
 </header>
-<form action="#">
-<button id="easy" onClick="inputNumber(board[0], 81)">Easy</button>
-<button id="medium" onClick="inputNumber(board[1], 81)">Medium</button>
-<button id="hard" onClick="inputNumber(board[2], 81)">Hard</button>
-<button type="reset">Clear</button>
-<button id="solve" onClick="parent.solve()">Solve</button>
+<button id="easy">Easy</button>
+<button id="medium">Medium</button>
+<button id="hard">Hard</button>
+<button id="clear">Clear</button>
+<button id="solve">Solve</button>
 <div class="clear"></div>
 
 <table>
@@ -122,15 +124,18 @@
 	<td class="nine"><input id="8-8" maxlength="1"></td>
 </tr>
 </table>
-</form>
 <div id="status">Enjoy your game!</div>
+
+<div class="instructions">
+	<p>1) Try inputting an invalid number</p>
+	<p>2) Try inputting invalid text</p>
+	<p>3) The game boards are pre-generated.</p>
+</div>
+
 <footer>
 <p>James Greve 2014</p>
-<a href="https://twitter.com/@tjgreve" target="_blank">Twitter <i class="fa fa-twitter fa-2x"></i></a>
-<a href="https://github.com/fimiak" target="_blank">Github<i class="fa fa-github fa-2x"></i></a>
-<a href="https://www.linkedin.com/in/tylerjamesgreve" target="_blank"> Linked<i class="fa fa-linkedin-square fa-2x"></i></a>
-
 </footer>
+<script src="jquery-2.1.1.min.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
