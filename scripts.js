@@ -1,3 +1,5 @@
+//Event Handlers for button difficulties
+
 $('#easy').click(function() {
 	inputNumber(board[0], 81)
 	status("Easy Game Started")
@@ -17,6 +19,9 @@ $('#clear').click(function() {
 $('#solve').click(function() {
 	solve()
 });
+
+// Color change on click..I used SASS math for the original colors, but as SASS is pre-compiled I could not use SASS for everything.
+
 
 $("#easy").click(function() {
 	var $a = $(".one");
@@ -38,6 +43,7 @@ $("#easy").click(function() {
 	var $i = $(".nine");
 	$i.css("background-color", "#1b8000");
 });
+
 $("#medium").click(function() {
 	var $a = $(".one");
 	$a.css("background-color", "#a5ccf0");
@@ -58,6 +64,7 @@ $("#medium").click(function() {
 	var $i = $(".nine");
 	$i.css("background-color", "#157a81");
 });
+
 $("#hard").click(function() {
 	var $a = $(".one");
 	$a.css("background-color", "#e48870");
@@ -78,6 +85,7 @@ $("#hard").click(function() {
 	var $i = $(".nine");
 	$i.css("background-color", "#470e1a");
 });
+
 $("#clear").click(function() {
 	var $a = $(".one");
 	$a.css("background-color", "#ff8094");
@@ -153,6 +161,10 @@ function clear() {
 	x = document.getElementById(r+"-"+c).value;
 	document.getElementById()
 }
+
+
+// Sudoku game logic
+
 
 function rules(pos) {
 	var size = new Array(10);
@@ -296,3 +308,4 @@ function solve() {
 }
 
 
+// James Greve 2014
