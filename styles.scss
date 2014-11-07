@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
-	color: $primary;
+	color: #bbb;
 }
 
 button {
@@ -115,14 +115,14 @@ input {
 
 input:hover {
 	border: 1px solid rgba(#fff, 0.8);
-	background-color: rgba(#ddd, 0.2);
-	box-shadow: 0 0 5px $primary;
+	background-color: rgba(#ddd, 0.05);
+	box-shadow: 0 0 5px #fff;
 }
 
 input:focus {
 	border: 1px solid rgba(#fff, 0.8);
-	background-color: rgba(#ddd, 0.4);
-	box-shadow: 0 0 5px $primary;
+	background-color: rgba(#ddd, 0.2);
+	box-shadow: 0 0 5px #fff;
 }
 
 .one {

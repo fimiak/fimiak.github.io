@@ -18,6 +18,88 @@ $('#solve').click(function() {
 	solve()
 });
 
+$("#easy").click(function() {
+	var $a = $(".one");
+	$a.css("background-color", "#80ff9a");
+	var $b = $(".two");
+	$b.css("background-color", "#66ff80");
+	var $c = $(".three");
+	$c.css("background-color", "#4dff63");
+	var $d = $(".four");
+	$d.css("background-color", "#33ff44");
+	var $e = $(".five");
+	$e.css("background-color", "#00ff00");
+	var $f = $(".six");
+	$f.css("background-color", "#11cc00");
+	var $g = $(".seven");
+	$g.css("background-color", "#16b300");
+	var $h = $(".eight");
+	$h.css("background-color", "#1a9900");
+	var $i = $(".nine");
+	$i.css("background-color", "#1b8000");
+});
+$("#medium").click(function() {
+	var $a = $(".one");
+	$a.css("background-color", "#a5ccf0");
+	var $b = $(".two");
+	$b.css("background-color", "#8fc3ed");
+	var $c = $(".three");
+	$c.css("background-color", "#7abce9");
+	var $d = $(".four");
+	$d.css("background-color", "#64b7e5");
+	var $e = $(".five");
+	$e.css("background-color", "#38b0de");
+	var $f = $(".six");
+	$f.css("background-color", "#20a3c3");
+	var $g = $(".seven");
+	$g.css("background-color", "#1d97ad");
+	var $h = $(".eight");
+	$h.css("background-color", "#198997");
+	var $i = $(".nine");
+	$i.css("background-color", "#157a81");
+});
+$("#hard").click(function() {
+	var $a = $(".one");
+	$a.css("background-color", "#e48870");
+	var $b = $(".two");
+	$b.css("background-color", "#e0715a");
+	var $c = $(".three");
+	$c.css("background-color", "#db5845");
+	var $d = $(".four");
+	$d.css("background-color", "#d73e30");
+	var $e = $(".five");
+	$e.css("background-color", "#b22222");
+	var $f = $(".six");
+	$f.css("background-color", "#871a23");
+	var $g = $(".seven");
+	$g.css("background-color", "#721621");
+	var $h = $(".eight");
+	$h.css("background-color", "#5c121e");
+	var $i = $(".nine");
+	$i.css("background-color", "#470e1a");
+});
+$("#clear").click(function() {
+	var $a = $(".one");
+	$a.css("background-color", "#ff8094");
+	var $b = $(".two");
+	$b.css("background-color", "#ff6685");
+	var $c = $(".three");
+	$c.css("background-color", "#ff4d78");
+	var $d = $(".four");
+	$d.css("background-color", "#ff336d");
+	var $e = $(".five");
+	$e.css("background-color", "#ff005e");
+	var $f = $(".six");
+	$f.css("background-color", "#cc005c");
+	var $g = $(".seven");
+	$g.css("background-color", "#b30058");
+	var $h = $(".eight");
+	$h.css("background-color", "#990052");
+	var $i = $(".nine");
+	$i.css("background-color", "#80004a");
+});
+
+
 
 // Beginning of Game Code
 

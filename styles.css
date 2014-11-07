@@ -42,7 +42,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #ff005e; }
+  color: #bbb; }
 
 button {
   background: #B9B7B8;
@@ -87,13 +87,13 @@ input {
 
 input:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: rgba(221, 221, 221, 0.2);
-  box-shadow: 0 0 5px #ff005e; }
+  background-color: rgba(221, 221, 221, 0.05);
+  box-shadow: 0 0 5px #fff; }
 
 input:focus {
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: rgba(221, 221, 221, 0.4);
-  box-shadow: 0 0 5px #ff005e; }
+  background-color: rgba(221, 221, 221, 0.2);
+  box-shadow: 0 0 5px #fff; }
 
 .one {
   background-color: #ff8094; }
