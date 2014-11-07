@@ -38,7 +38,6 @@ p {
 
 a {
   color: #fff;
-  transition: .2s;
   text-decoration: none; }
 
 a:hover {
@@ -81,7 +80,7 @@ input {
   background: none;
   font-family: "Quicksand";
   text-align: center;
-  transition: all .5s ease-in-out;
+  transition: .5s;
   outline: none;
   border: 1px solid transparent; }
 
@@ -137,10 +136,9 @@ input:focus {
   font-size: 1em; }
 
 footer {
-  position: relative;
+  position: absolute;
   margin-top: 50px;
   height: 100px;
-  bottom: 0;
   background-color: #333;
   width: 100%; }
 
@@ -194,7 +192,8 @@ footer p {
 
   footer {
     padding: 10px;
-    position: relative; }
+    bottom: 0;
+    position: absolute; }
 
   footer p {
     font-size: .8em;

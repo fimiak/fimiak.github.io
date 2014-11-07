@@ -58,7 +58,6 @@ p {
 
 a {
 	color: $text;
-	transition: .2s;
 	text-decoration: none;
 }
 
@@ -108,7 +107,7 @@ input {
 	background: none;
 	font-family: "Quicksand";
 	text-align: center;
-	transition: all .5s ease-in-out;
+	transition: .5s;
 	outline: none;
 	border: 1px solid rgba(0,0,0,0);
 }
@@ -180,10 +179,9 @@ input:focus {
 }
 
 footer {
-	position: relative;
+	position: absolute;
 	margin-top: 50px;
 	height: 100px;
-	bottom: 0;
 	background-color: #333;
 	width: 100%;
 }
@@ -256,7 +254,8 @@ input {
 
 footer {
 	padding: 10px;
-	position: relative;
+	bottom: 0;
+	position: absolute;
 }
 
 footer p {

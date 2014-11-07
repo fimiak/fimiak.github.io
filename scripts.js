@@ -2,20 +2,48 @@
 
 $('#easy').click(function() {
 	inputNumber(board[0], 81)
+
 	status("Easy Game Started")
+	$('input').each(function(i, e) { // This will make preset numbers readonly
+		if( $(e).val() == 0 ) {
+			$(e).prop('readonly', false)	
+		}
+		else {
+			$(e).prop('readonly', true)	
+		}
+ 	})
 });
+
 $('#medium').click(function() {
 	inputNumber(board[1], 81)
 	status("Medium Game Started")
+	$('input').each(function(i, e) {
+		if( $(e).val() == 0 ) {
+			$(e).prop('readonly', false)	
+		}
+		else {
+			$(e).prop('readonly', true)	
+		}
+ 	})
 });
+
 $('#hard').click(function() {
 	inputNumber(board[2], 81)
 	status("Hard Game Started")
+	$('input').each(function(i, e) {
+		if( $(e).val() == 0 ) {
+			$(e).prop('readonly', false)	
+		}
+		else {
+			$(e).prop('readonly', true)	
+		}
+ 	})
 });
-$('#clear').click(function() {
-	inputNumber(board[3], 81)
-	status("Game Cleared")
+
+$('#checkGame').click(function() {
+	checkGame()
 });
+
 $('#solve').click(function() {
 	solve()
 });
@@ -86,7 +114,7 @@ $("#hard").click(function() {
 	$i.css("background-color", "#470e1a");
 });
 
-$("#clear").click(function() {
+$("#solve").click(function() {
 	var $a = $(".one");
 	$a.css("background-color", "#ff8094");
 	var $b = $(".two");
@@ -120,7 +148,7 @@ var limiters = new Array(81);
 
 
 for(var x = 0; x < 81; x++) {
-	limiters[x] = new Array(8);
+	limiters[x] = new Array(6);
 }
 
 // The different difficulties will be drawn from these arrays. Presets drawn from websudoku.com.
@@ -131,8 +159,6 @@ board[1] = new Array(81);
 board[1] = [0,3,0,0,4,0,2,0,0,8,7,0,9,0,1,0,0,6,0,0,6,0,0,0,0,0,0,0,1,0,6,0,0,0,0,8,4,0,9,0,0,0,6,0,2,2,0,0,0,0,8,0,1,0,0,0,0,0,0,0,3,0,0,3,0,0,1,0,2,0,6,4,0,0,4,0,3,0,0,5,0];
 board[2] = new Array(81);
 board[2] = [0,0,0,0,0,0,0,6,0,0,0,0,0,0,7,8,1,0,0,0,2,5,8,0,0,4,3,2,0,0,0,0,3,0,5,6,0,0,0,0,4,0,0,0,0,5,4,0,2,0,0,0,0,1,8,7,0,0,5,4,3,0,0,0,2,1,3,0,0,0,0,0,0,5,0,0,0,0,0,0,0];
-board[3] = new Array(81);
-board[3] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 function status(text) {
 	document.getElementById("status").innerHTML = text;
@@ -154,12 +180,6 @@ function makeBoard() {
 			sudoku[r*9+c] = Number(x);
 		}
 	return true;
-}
-
-function clear() {
-	var x;
-	x = document.getElementById(r+"-"+c).value;
-	document.getElementById()
 }
 
 
@@ -286,6 +306,23 @@ function inputNumber(pos, end) {
 			document.getElementById(r+"-"+c).value = "";
 		else
 			document.getElementById(r+"-"+c).value = pos[x];
+	}
+}
+
+// Call this to check the board status.
+
+function checkGame() {
+
+	status("Checking");
+	if(!makeBoard())
+		return;
+	rules(sudoku);
+	var stat = solve_r(0);
+	if(stat) {
+		status("All good so far!");
+	}
+	else {
+		status("Invalid solution");
 	}
 }
 
