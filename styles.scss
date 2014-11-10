@@ -36,7 +36,7 @@ header {
 	background-color: #080715;
 	width: 100%;
 	padding-bottom: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 header a {
@@ -51,7 +51,7 @@ h1 {
 }
 
 p {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color: $text;
 	margin: 10px 0;
 }
@@ -168,19 +168,22 @@ input:focus {
 	border-right: 2px solid $black;
 }
 
-.status {
+#status {
 	font-weight: 400;
+	font-size: 1.1em;
+	margin-bottom: 20px;
 }
 
 .instructions p {
 	color: $black;
-	margin-top: 20px;
+	margin-top: 15px;
+	font-weight: 400;
 	font-size: 1em;
 }
 
 footer {
 	position: absolute;
-	margin-top: 50px;
+	margin-top: 100px;
 	height: 100px;
 	background-color: #333;
 	width: 100%;
@@ -212,12 +215,12 @@ td {
 
 button {
 	font-size: 1.3em;
-	margin: 15px 0;
+	margin: 20px 0;
 	padding: 5px 7.5px;
 }
 
 input {
-	padding: 10px;
+	padding: 20px;
 }
 }
 
@@ -249,12 +252,13 @@ td {
 }
 
 input {
-	padding: 5px;
+	padding: 6px;
 }
 
 footer {
 	padding: 10px;
 	bottom: 0;
+	margin-top: 50px;
 	position: absolute;
 }
 

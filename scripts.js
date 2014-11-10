@@ -53,23 +53,23 @@ $('#solve').click(function() {
 
 $("#easy").click(function() {
 	var $a = $(".one");
-	$a.css("background-color", "#80ff9a");
+	$a.css("background-color", "#acd69b");
 	var $b = $(".two");
-	$b.css("background-color", "#66ff80");
+	$b.css("background-color", "#9fce89");
 	var $c = $(".three");
-	$c.css("background-color", "#4dff63");
+	$c.css("background-color", "#94c776");
 	var $d = $(".four");
-	$d.css("background-color", "#33ff44");
+	$d.css("background-color", "#8ac064");
 	var $e = $(".five");
-	$e.css("background-color", "#00ff00");
+	$e.css("background-color", "#78AB46"); // Green
 	var $f = $(".six");
-	$f.css("background-color", "#11cc00");
+	$f.css("background-color", "#658737");
 	var $g = $(".seven");
-	$g.css("background-color", "#16b300");
+	$g.css("background-color", "#5b7530");
 	var $h = $(".eight");
-	$h.css("background-color", "#1a9900");
+	$h.css("background-color", "#4f6328");
 	var $i = $(".nine");
-	$i.css("background-color", "#1b8000");
+	$i.css("background-color", "#425121");
 });
 
 $("#medium").click(function() {
@@ -82,7 +82,7 @@ $("#medium").click(function() {
 	var $d = $(".four");
 	$d.css("background-color", "#64b7e5");
 	var $e = $(".five");
-	$e.css("background-color", "#38b0de");
+	$e.css("background-color", "#38b0de"); // Blue
 	var $f = $(".six");
 	$f.css("background-color", "#20a3c3");
 	var $g = $(".seven");
@@ -103,7 +103,7 @@ $("#hard").click(function() {
 	var $d = $(".four");
 	$d.css("background-color", "#d73e30");
 	var $e = $(".five");
-	$e.css("background-color", "#b22222");
+	$e.css("background-color", "#b22222"); // Red
 	var $f = $(".six");
 	$f.css("background-color", "#871a23");
 	var $g = $(".seven");
@@ -229,7 +229,7 @@ function validate(pos) {
 			r_sum += pos[r*9+c];
 			val_col[c] += pos[r*9+c];
 		}
-		if(r_sum != 45)
+		if(r_sum != 45) // 1 + 2 + 3...+9 = 45
 			return -2048;
 	}
 	for(var c = 0; c < 9; c++)
