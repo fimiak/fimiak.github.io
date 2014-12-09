@@ -1,0 +1,371 @@
+@import url(http://fonts.googleapis.com/css?family=Megrim)
+
+@font-face 
+  font-family: 'Josefin Slab', serif
+
+*
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+html, body, div, header, footer, h2, h1, h3, a
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  color: #000
+  font-family: 'Lato', serif
+
+p, span
+  font-weight: 300
+  font-size: 14px
+
+section
+  clear: both
+
+section, div
+  display: block
+
+.container-fluid
+  padding-left: 0
+  padding-right: 0
+
+.active
+  border-bottom: 3px solid #2e92ce
+
+h1, h2
+  clear: both
+  text-transform: uppercase
+  letter-spacing: .1em
+  display: block
+
+h1
+  font-size: 36px
+
+h2
+  font-size: 18px
+  color: #000
+
+h3
+  font-size: 50px
+  color: #000
+  letter-spacing: .1em
+  font-family: "Megrim", sans-serif
+
+ul
+  list-style: none
+  padding: none
+
+header, .blurheader 
+  background: rgba(255,255,255,.1)
+  position: fixed
+  width: 100%
+  top: 0
+  height: 75px
+  border-bottom: 1px solid rgba(0,0,0,.2)
+  z-index: 10
+
+header
+  display: none
+
+.blurheader
+  background: transparent
+  overflow: hidden
+  z-index: 9
+  left: 0
+
+header a
+  position: relative
+  margin: 0
+  color: #000
+  font-size: 24px
+  font-weight: 200
+  text-align: center
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)"
+
+#canvas
+  opacity: 1
+  z-index: 100
+  position: relative
+  display: block
+  top: 3px
+
+.bg
+  width: 100%
+  height: 500px
+
+.nav h2
+  margin-top: 10px
+  font-size: 13px
+  letter-spacing: 0
+
+.nav li
+  margin-right: 5px
+  display: inline-block
+  margin-top: 10px
+
+.me
+  height: 200px
+  width: 200px
+  margin-left: auto
+  margin-right: auto
+
+#intro
+  background: #444
+  background-image: url('/client/img/fog.jpg')
+  background-position: center
+  width: 100%
+  padding: 100px 0 0 0
+  height: 800px
+
+#intro h3
+  font-weight: 600
+  color: #eef7fa
+  margin-bottom: 20px
+
+#intro span
+  font-size: 30px
+  font-family: 'Josefin Slab', serif
+  color: #222
+
+#intro i
+  padding-left: 10px
+  padding-right: 10px
+  margin-top: 20px
+  color: #fff
+  padding-bottom: 11px
+  margin-bottom: 120px
+  font-size: 30px
+  &:hover
+    color: #2574a4
+
+.inspiretext
+  font-size: 32px
+  letter-spacing: .2
+  color: #222
+  font-weight: 300
+  margin-bottom: 120px
+  font-family: 'Josefin Slab', serif
+
+.action
+  margin-left: auto
+  margin-right: auto
+  width: 100px
+  margin-bottom: 120px
+
+.action h3
+  margin-top: 30px
+  margin-bottom: 50px
+
+#timeline
+  background-color: #d6ebf2
+  width: 100%
+  padding-top: 100px
+  height: 680px
+
+#skills
+  padding-top: 100px
+  background-color: #2574a4
+  padding-bottom: 100px
+  height: 800px
+
+#skills img
+  width: 100%
+  margin-bottom: 40px
+
+#skills h1
+  margin-bottom: 30px
+
+#skills h2
+  color: #333
+
+#skills li
+  color: #ddd
+
+.laptop:hover
+  filter: grayscale(100%)
+  -webkit-filter: grayscale(100%)
+
+.laptop
+  transition: 1s ease-in
+  max-width: 100%
+  display: block
+  margin-left: auto
+  margin-right: auto
+  filter: grayscale(0%)
+  -webkit-filter: grayscale(0%)
+
+#timeline h1
+  margin-bottom: 70px
+
+#timeline h2
+  margin-bottom: 20px
+
+#timeline p
+  font-size: 16px
+  color: #333
+  margin-bottom: 80px
+
+.worktitle
+  text-align: center
+  padding: 40px 0
+
+#work
+  background-color: #cde7f0
+  padding-top: 100px
+  height: 1200px
+  text-align: center
+  padding-bottom: 60px
+
+#work p, #work a
+  color: #000
+  font-weight: bold
+  text-align: justify
+
+#work h2
+  margin-top: 20px
+  margin-bottom: 20px
+
+#work img
+  max-width: 250px
+  max-height: 250px
+  width: 100%
+
+.box
+  transition: .5s linear
+  display: inline-block
+  background-color: #bddfeb
+  padding: 10px 20px
+  vertical-align: middle
+  float: left
+  max-width: 50%
+  height: 400px
+
+.box:hover
+  background-color: #2574a4
+
+
+.right ul li, .right ul h2
+  text-align: right
+
+.box h2
+  margin-bottom: 10px
+  margin-top: 10px
+
+.box p
+  margin-bottom: 20px
+
+.col ul
+  list-style: none
+  margin-bottom: 50px
+  text-align: left
+  padding: 0
+
+.col h2
+  margin-bottom: 15px
+
+.col li
+  font-size: 15px
+  text-align: left
+  margin-bottom: 10px
+
+.btn
+  padding: 30px 60px
+  text-transform: uppercase
+  text-decoration: none
+  font-family: 'megrim', sans-serif
+  font-size: 24px
+  letter-spacing: .2em
+  border: 1px solid #ddd
+  transition: 0.3s
+  color: #fff
+  clear: both
+  border-radius: 0
+  margin-bottom: 100px
+
+.btn:hover
+  background: #eef7fa
+  background: rgba(255,255,255,.3)
+  border-radius: 0
+  border-color: #333
+
+/*** Footer */
+
+footer
+  color: #fff
+  height: 750px
+  background-color: #007
+  background: url('/client/img/sf.jpg')
+
+.pic 
+  padding: 120px 0 0 0
+
+footer h2
+  margin: 20px 0
+  color: #999798
+  font-size: 18px
+
+footer h3
+  margin: 20px 0
+
+.footerbtn
+  padding: 12px 28px
+  height: 42px
+  letter-spacing: .3em
+  border: 1px solid #333031
+  text-decoration: none
+  line-height: 14px
+  font-size: 14px
+
+footer li
+  margin-bottom: 10px
+
+footer img
+  margin-left: 10px
+  margin-top: 15px
+
+footer a
+  transition: 0.3s
+
+.ilinks i
+  margin: 25px 0
+  margin-left: 3px
+  color: #bbb
+  margin-right: 6px
+  transition: .3s ease
+  font-size: 38px
+  padding: 5px
+  &:hover
+    color: #2574a4
+
+.ilinks i:hover
+  transition: .4s
+  padding-bottom: 20px
+
+.clear
+  clear: both
+
+@media (max-width: 750px)
+  .col ul li, .col ul h2
+    text-align: center
+  header a
+    font-size: 12px
+  header
+    height: 60px
+    padding: 3px 0
+  .nav li
+    margin-top: 8px
+  .box
+    height: 350px
+  #work h2
+    font-size: 15px
+    margin: 6px 0px
+  .box p
+    font-size: 12px
+
+
+@media only screen 
+  .glass a 
+    -ms-filter: "none"
+  
+
