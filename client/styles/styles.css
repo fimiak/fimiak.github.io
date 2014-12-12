@@ -90,7 +90,7 @@ header {
 
 #intro {
   background: #444;
-  background-image: url("../client/img/fog.jpg");
+  background-image: url("/client/img/fog.jpg");
   background-position: center;
   width: 100%;
   padding: 100px 0 0 0;
@@ -257,7 +257,7 @@ footer {
   color: #fff;
   height: 750px;
   background-color: #007;
-  background: url("../client/img/sf.jpg"); }
+  background: url("/client/img/sf.jpg"); }
   footer h2 {
     margin: 20px 0;
     color: #999798;
