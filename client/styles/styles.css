@@ -79,6 +79,12 @@ header {
   margin-top: 10px;
   font-size: 13px;
   letter-spacing: 0; }
+.nav h3 {
+  float: left;
+  font-size: 32px;
+  line-height: 60px;
+  margin-left: 5px;
+  margin-right: 15px; }
 .nav li {
   height: 60px;
   line-height: 40px;
@@ -250,7 +256,7 @@ header {
   clear: both;
   color: #fff;
   border-radius: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   margin-top: 25px; }
   .btn:hover {
     color: #fff;
@@ -271,7 +277,7 @@ footer {
     margin-bottom: 10px; }
   footer img {
     margin-left: 10px;
-    margin-top: 25px; }
+    margin-top: 40px; }
   footer a {
     transition: 0.3s; }
 
@@ -325,12 +331,18 @@ footer {
       font-size: 15px;
       line-height: 35px; }
 
+  .nav h3 {
+    display: none; }
+
   .nav li a {
-    padding-right: 3px;
-    padding-left: 3px; }
+    line-height: 60px;
+    padding: 0 10px; }
+    .nav li a:first-child {
+      margin-left: 10px; }
 
   .box {
-    height: 350px; }
+    height: 350px;
+    border: 3px solid #2574a4; }
 
   #intro {
     height: 600px; }
