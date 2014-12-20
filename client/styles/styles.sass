@@ -32,6 +32,7 @@ section, div
 
 .active
   border-bottom: 3px solid #2e92ce
+  background: linear-gradient(rgba(205,231,240,1), rgba(205,231,240,.1))
 
 h1, h2
   clear: both
@@ -86,7 +87,7 @@ header
     line-height: 40px
     display: inline-block
     a
-      &:hover
+      &:hover, &:focus
         background: linear-gradient(rgba(205,231,240,1), rgba(205,231,240,.1))
   li:last-child
     height: 60px
@@ -220,10 +221,8 @@ header
 
 #timeline
   background-color: #d6ebf2
-  padding-top: 40px
-  height: 650px
-  h2
-    margin-bottom: 10px
+  padding-top: 20px
+  height: 600px
   p
     font-size: 15px
     color: #333
