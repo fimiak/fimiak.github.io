@@ -13,14 +13,6 @@ dbCtrl.controller('dbCtrl', ['$scope', '$location', 'Box', function ($scope, $lo
     $scope.boxes.push(i);
   }
   $scope.test = 'one';
-
-  $scope.options = {
-    map: {
-      center: new google.maps.LatLng(37.79, 120.41),
-      zoom: 12,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-  };
 }]);
 
 dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $routeParams, Box) {

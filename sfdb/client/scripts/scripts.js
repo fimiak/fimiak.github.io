@@ -7,6 +7,7 @@ $(document).ready(function(){
   slide: '> div',
   cssEase: 'linear'
 });
-});
 
 $("[data-toggle=tooltip").tooltip();
+
+});
