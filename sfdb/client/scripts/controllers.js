@@ -23,7 +23,6 @@ dbCtrl.controller('dbCtrl', ['$scope', '$location', 'Box', function ($scope, $lo
   };
 }]);
 
-
 dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $routeParams, Box) {
   $scope.box = Box.get({boxId: $routeParams.boxId}, function(box) {
     $scope.mainImageUrl = box.images[0];

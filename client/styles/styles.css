@@ -45,7 +45,7 @@ h2 {
   color: #000; }
 
 h3 {
-  font-size: 60px;
+  font-size: 54px;
   color: #000;
   letter-spacing: -0.08em;
   font-family: "Megrim", sans-serif; }
@@ -56,7 +56,7 @@ ul {
 
 header {
   background: rgba(255, 255, 255, 0.3);
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7));
   filter: drop-shadow(0px 0px 5px white);
   -webkit-filter: drop-shadow(0px 0px 5px white);
   position: fixed;
@@ -71,6 +71,7 @@ header {
     color: #000;
     font-size: 20px;
     font-weight: 200;
+    height: 60px;
     text-align: center; }
 
 .nav h2 {
@@ -78,49 +79,52 @@ header {
   font-size: 13px;
   letter-spacing: 0; }
 .nav li {
-  margin-right: 5px;
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 10px; }
-  .nav li a {
-    padding: 0px; }
-    .nav li a:hover {
-      background-color: transparent;
-      border-bottom: 2px solid #555; }
+  height: 60px;
+  line-height: 40px;
+  display: inline-block; }
+  .nav li a:hover {
+    background: linear-gradient(#cde7f0, rgba(205, 231, 240, 0.1)); }
+.nav li:last-child {
+  height: 60px;
+  display: inline-block; }
+  .nav li:last-child a {
+    border-right: none; }
+    .nav li:last-child a:hover {
+      background: linear-gradient(#cde7f0, rgba(205, 231, 240, 0.1)); }
 
 #intro {
   background: #444;
   background-image: url("/client/img/fog.jpg");
   background-position: center;
   width: 100%;
-  padding: 100px 0 0 0;
-  height: 800px; }
+  padding: 60px 0 0 0;
+  height: 700px; }
   #intro h3 {
     font-weight: 600;
-    color: #eef7fa;
-    margin-bottom: 20px; }
+    margin: 15px 0;
+    color: #eef7fa; }
   #intro p {
     font-size: 30px;
     font-family: "Josefin Slab", serif;
     color: #222;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 400; }
   #intro i {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20px;
-    color: #2574a4;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    color: #fff;
     padding-bottom: 11px;
     margin-bottom: 120px;
     font-size: 30px; }
     #intro i:hover {
-      color: #eee; }
+      color: #2574a4; }
   #intro h2 {
     font-size: 24px;
     letter-spacing: 0.2;
     color: #111;
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     font-family: "Josefin Slab", serif;
     text-transform: capitalize; }
 
@@ -135,19 +139,17 @@ header {
 
 #skills {
   padding-top: 50px;
-  background-color: #2574a4;
+  background-color: #cde7f0;
   padding-bottom: 100px;
-  height: 800px; }
+  height: 700px; }
   #skills img {
     width: 100%;
     margin-bottom: 40px; }
-  #skills h1 {
-    margin-bottom: 30px; }
   #skills h2 {
     color: #333;
     font-family: "Josefin-Slab"; }
   #skills li {
-    color: #ddd; }
+    color: #black; }
 
 .laptop {
   transition: 1s ease-in;
@@ -164,19 +166,6 @@ header {
 .skillpic {
   text-align: center; }
 
-#timeline {
-  background-color: #d6ebf2;
-  padding-top: 50px;
-  height: 700px; }
-  #timeline h1 {
-    margin-bottom: 50px; }
-  #timeline h2 {
-    margin-bottom: 20px; }
-  #timeline p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 60px; }
-
 .mediaclearbig {
   clear: both; }
 
@@ -185,13 +174,16 @@ header {
   padding: 40px 0; }
 
 #work {
-  background-color: #cde7f0;
+  background-color: #2574a4;
   padding-top: 50px;
   height: 1000px;
   text-align: center;
   padding-bottom: 60px; }
+  #work h1 {
+    color: #fff; }
   #work p, #work a {
     color: #000;
+    font-size: 12px;
     font-weight: bold; }
   #work h2 {
     margin-top: 10px;
@@ -205,13 +197,14 @@ header {
   transition: 0.5s linear;
   display: inline-block;
   background-color: #bddfeb;
-  padding: 10px 20px;
+  padding: 0px;
   vertical-align: middle;
   float: left;
   max-width: 50%;
-  height: 400px; }
+  height: 400px;
+  border: 5px solid #2574a4; }
   .box:hover {
-    background-color: #2574a4; }
+    background-color: #d6ebfd; }
   .box h2 {
     margin-bottom: 10px;
     margin-top: 10px; }
@@ -220,6 +213,17 @@ header {
 
 .right ul li, .right ul h2 {
   text-align: right; }
+
+#timeline {
+  background-color: #d6ebf2;
+  padding-top: 40px;
+  height: 650px; }
+  #timeline h2 {
+    margin-bottom: 10px; }
+  #timeline p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 50px; }
 
 .col ul {
   list-style: none;
@@ -234,7 +238,7 @@ header {
   margin-bottom: 10px; }
 
 .btn {
-  padding: 20px 40px;
+  padding: 15px 30px;
   text-transform: capitalize;
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -243,21 +247,21 @@ header {
   letter-spacing: 0em;
   border: 2px solid #fff;
   transition: 0.25s;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
   clear: both;
-  color: #000;
+  color: #fff;
   border-radius: 0;
-  margin-bottom: 20px;
-  margin-top: 50px; }
+  margin-bottom: 25px;
+  margin-top: 25px; }
   .btn:hover {
-    color: #000;
-    background: rgba(255, 255, 255, 0.3); }
+    color: #fff;
+    background: rgba(90, 75, 205, 0.4); }
 
 footer {
   color: #fff;
-  height: 750px;
-  background-color: #007;
-  background: url("/client/img/sf.jpg"); }
+  height: 450px;
+  background-color: #004;
+  background: url("/client/img/sf.jpg") center; }
   footer h2 {
     margin: 20px 0;
     color: #999798;
@@ -268,7 +272,7 @@ footer {
     margin-bottom: 10px; }
   footer img {
     margin-left: 10px;
-    margin-top: 15px; }
+    margin-top: 25px; }
   footer a {
     transition: 0.3s; }
 
@@ -277,9 +281,6 @@ footer {
   width: 200px;
   margin-left: auto;
   margin-right: auto; }
-
-.pic {
-  padding: 80px 0 0 0; }
 
 .footerbtn {
   padding: 12px 28px;
@@ -318,19 +319,16 @@ footer {
   .col ul li, .col ul h2 {
     text-align: center; }
 
-  header a {
-    font-size: 12px; }
-
   header {
-    height: 60px;
-    padding: 3px 0; }
+    height: 60px; }
+    header a {
+      height: 60px;
+      font-size: 15px;
+      line-height: 35px; }
 
-  .nav li {
-    margin-top: 8px;
-    margin-right: 3px; }
-    .nav li a {
-      padding-right: 3px;
-      padding-left: 3px; }
+  .nav li a {
+    padding-right: 3px;
+    padding-left: 3px; }
 
   .box {
     height: 350px; }
@@ -360,7 +358,7 @@ footer {
     margin-bottom: 30px; }
 
   #skills {
-    height: 1000px; }
+    height: 900px; }
     #skills p {
       font-size: 10px; }
     #skills h2 {
