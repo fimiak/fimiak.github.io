@@ -7,7 +7,7 @@
     "snippet": "A new arena for the Golden State Warriors. The location of the arena has recently been moved to Mission Bay. No new images of this location exist at this time.",
     "website": "N/A",
     "images": [
-      "img/warriors-1.jpg",
-      "img/warriors-2.jpg"
+      "dist/img/warriors-1.jpg",
+      "dist/img/warriors-2.jpg"
     ]
 }

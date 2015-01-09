@@ -8,7 +8,7 @@
     "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
     "website": "N/A",
     "images": [
-      "img/333fremont-1.jpg",
-      "img/333fremont-2.jpg"
+      "dist/img/333fremont-1.jpg",
+      "dist/img/333fremont-2.jpg"
     ]
 }

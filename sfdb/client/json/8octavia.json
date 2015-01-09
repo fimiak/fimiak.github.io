@@ -8,9 +8,9 @@
     "snippet": "A gorgeous Saitowitz design which unveils itself coming off of the 101 highway exit onto Octavia.",
     "website": "http://8octavia.com/",
     "images": [
-      "img/8octavia-1.jpg",
-      "img/8octavia-2.jpg",
-      "img/8octavia-3.jpg",
-      "img/8octavia-4.jpg"
+      "dist/img/8octavia-1.jpg",
+      "dist/img/8octavia-2.jpg",
+      "dist/img/8octavia-3.jpg",
+      "dist/img/8octavia-4.jpg"
     ]
 }

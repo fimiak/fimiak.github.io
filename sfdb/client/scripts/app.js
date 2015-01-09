@@ -1,14 +1,22 @@
-var sfApp = angular.module('sfApp', ['ngRoute', 'ngAnimate', 'sfAppControllers', 'sfAppServices', 'sfAppDirectives']);
+var sfApp = angular.module('sfApp', ['ngRoute', 'sfAppControllers', 'sfAppServices', 'sfAppDirectives']);
 
 sfApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/about.html',
+        templateUrl: 'client/partials/about.html',
         controller: 'dbCtrl'
     })
+      .when('/blog', {
+        templateUrl: 'client/partials/blog.html',
+        controller: ''
+    })
+      .when('/map', {
+        templateUrl: 'client/partials/map.html',
+        controller: ''
+    })
       .when('/:boxId', {
-        templateUrl: 'partials/database.html',
+        templateUrl: 'client/partials/database.html',
         controller: 'dtCtrl'
     })
       .otherwise({

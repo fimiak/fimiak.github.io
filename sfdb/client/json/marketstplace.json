@@ -7,8 +7,8 @@
     "snippet": "An upscale shopping complex that will expand San Francisco's commercial district up Market street by a city block.",
     "website": "http://lineasf.com/",
     "images": [
-      "img/marketstplace-1.jpg",
-      "img/marketstplace-2.jpg",
-      "img/marketstplace-3.jpg"
+      "dist/img/marketstplace-1.jpg",
+      "dist/img/marketstplace-2.jpg",
+      "dist/img/marketstplace-3.jpg"
     ]
 }

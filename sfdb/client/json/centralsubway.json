@@ -7,9 +7,9 @@
     "snippet": "Four new subway stops running North to South connecting Chinatown, Union Square, SoMa, and the Caltrain station.",
     "website": "http://www.centralsubwaysf.com/",
     "images": [
-      "img/centralsubway-1.jpg",
-      "img/centralsubway-2.jpg",
-      "img/centralsubway-3.jpg",
-      "img/centralsubway-4.jpg"
+      "dist/img/centralsubway-1.jpg",
+      "dist/img/centralsubway-2.jpg",
+      "dist/img/centralsubway-3.jpg",
+      "dist/img/centralsubway-4.jpg"
     ]
 }

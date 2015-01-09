@@ -8,9 +8,9 @@
     "snippet": "The third of four phases of the massive Trinity Place development at 8th and Market. This will contribute greatly to the remaking of Mid-Market.",
     "website": "http://www.1190missionapts.com/",
     "images": [
-      "img/trinity-1.jpg",
-      "img/trinity-2.jpg",
-      "img/trinity-3.jpg",
-      "img/trinity-4.jpg"
+      "dist/img/trinity-1.jpg",
+      "dist/img/trinity-2.jpg",
+      "dist/img/trinity-3.jpg",
+      "dist/img/trinity-4.jpg"
     ]
 }

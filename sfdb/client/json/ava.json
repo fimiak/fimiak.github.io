@@ -8,8 +8,8 @@
     "snippet": "Avalon Bay developed this apartment building at 9th and Mission. Targeted at a young tech crowd.",
     "website": "http://www.ava55ninth.com/",
     "images": [
-      "img/ava-1.jpg",
-      "img/ava-2.jpg",
-      "img/ava-3.jpg"
+      "dist/img/ava-1.jpg",
+      "dist/img/ava-2.jpg",
+      "dist/img/ava-3.jpg"
     ]
 }

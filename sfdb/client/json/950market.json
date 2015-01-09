@@ -8,9 +8,9 @@
     "snippet": "A massive new project by European starchitects BIG. Residential, art space, and hotel in one.",
     "website": "http://950-974market.com/project/",
     "images": [
-      "img/950market-1.jpg",
-      "img/950market-2.jpg",
-      "img/950market-3.jpg",
-      "img/950market-4.jpg"
+      "dist/img/950market-1.jpg",
+      "dist/img/950market-2.jpg",
+      "dist/img/950market-3.jpg",
+      "dist/img/950market-4.jpg"
     ]
 }

@@ -1,14 +1,22 @@
-var sfApp = angular.module('sfApp', ['ngRoute', 'ngAnimate', 'sfAppControllers', 'sfAppServices', 'sfAppDirectives', 'AngularGM']);
+var sfApp = angular.module('sfApp', ['ngRoute', 'sfAppControllers', 'sfAppServices', 'sfAppDirectives']);
 
 sfApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/about.html',
+        templateUrl: 'client/partials/about.html',
         controller: 'dbCtrl'
     })
+      .when('/blog', {
+        templateUrl: 'client/partials/blog.html',
+        controller: ''
+    })
+      .when('/map', {
+        templateUrl: 'client/partials/map.html',
+        controller: ''
+    })
       .when('/:boxId', {
-        templateUrl: 'partials/database.html',
+        templateUrl: 'client/partials/database.html',
         controller: 'dtCtrl'
     })
       .otherwise({
@@ -31,17 +39,7 @@ dbCtrl.controller('dbCtrl', ['$scope', '$location', 'Box', function ($scope, $lo
   for (var i=0; i<6; i++) {
     $scope.boxes.push(i);
   }
-  $scope.test = 'one';
-
-  $scope.options = {
-    map: {
-      center: new google.maps.LatLng(37.79, 120.41),
-      zoom: 12,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-  };
 }]);
-
 
 dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $routeParams, Box) {
   $scope.box = Box.get({boxId: $routeParams.boxId}, function(box) {
@@ -82,22 +80,20 @@ var dbDir = angular.module('sfAppDirectives', []);
     };
   }]);
 
-$(document).ready(function(){
-	$('.fade').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  slide: '> div',
-  cssEase: 'linear'
-});
-});
-
-$("[data-toggle=tooltip").tooltip();
+function initialize() {
+  var mapCanvas = document.getElementById('map-canvas');
+  var mapOptions = {
+      center: new google.maps.LatLng(44.5403, -78.5463),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions)
+}
+google.maps.event.addDomListener(window, 'load', initialize);
 var dbServices = angular.module('sfAppServices', ['ngResource']);
 
 dbServices.factory('Box', ['$resource', function($resource) {
-  return $resource('json/:boxId.json', {}, {
+  return $resource('client/json/:boxId.json', {}, {
     query: {method:'GET', params:{boxId:'boxes'}, isArray:true}
   });
 }]);

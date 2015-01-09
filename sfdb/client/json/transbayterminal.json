@@ -7,9 +7,9 @@
     "snippet": "The Grand Central Station of the West. Bus terminal, park, retail, and future Caltrain tracks and California High Speed Rail.",
     "website": "http://transbaycenter.org/",
     "images": [
-      "img/transbayterminal-1.jpg",
-      "img/transbayterminal-2.jpg",
-      "img/transbayterminal-3.jpg",
-      "img/transbayterminal-4.jpg"
+      "dist/img/transbayterminal-1.jpg",
+      "dist/img/transbayterminal-2.jpg",
+      "dist/img/transbayterminal-3.jpg",
+      "dist/img/transbayterminal-4.jpg"
     ]
 }

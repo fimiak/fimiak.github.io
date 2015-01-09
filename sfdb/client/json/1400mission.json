@@ -8,8 +8,8 @@
     "snippet": "New 15 floor complex intended to fulfill the BMR requirement of Lumina.",
     "website": "http://www.tndc.org/indevelopment/1400-mission-street/",
     "images": [
-      "img/1400mission-1.jpg",
-      "img/1400mission-2.jpg",
-      "img/1400mission-3.jpg"
+      "dist/img/1400mission-1.jpg",
+      "dist/img/1400mission-2.jpg",
+      "dist/img/1400mission-3.jpg"
     ]
 }

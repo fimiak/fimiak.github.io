@@ -7,9 +7,9 @@
     "snippet": "San Francisco's long reigning tallest building. The pyramid was originally meant to be taller, but was ultimately shortened, resulting in the elevator shafts protruding from the sides.",
     "website": "http://www.thepyramidcenter.com/",
     "images": [
-      "img/transamerica-1.jpg",
-      "img/transamerica-2.jpg",
-      "img/transamerica-3.jpg",
-      "img/transamerica-4.jpg"
+      "dist/img/transamerica-1.jpg",
+      "dist/img/transamerica-2.jpg",
+      "dist/img/transamerica-3.jpg",
+      "dist/img/transamerica-4.jpg"
     ]
 }

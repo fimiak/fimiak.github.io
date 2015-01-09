@@ -8,9 +8,9 @@
     "snippet": "One of the early to finish residential buildings in the newly revitalized Mid-Market neighborhood.",
     "website": "http://www.rentnema.com/",
     "images": [
-      "img/nema-1.jpg",
-      "img/nema-2.jpg",
-      "img/nema-3.jpg",
-      "img/nema-4.jpg"
+      "dist/img/nema-1.jpg",
+      "dist/img/nema-2.jpg",
+      "dist/img/nema-3.jpg",
+      "dist/img/nema-4.jpg"
     ]
 }

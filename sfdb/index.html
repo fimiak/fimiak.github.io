@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>sanfranciscoDB: A Database of new construction in San Francisco</title>
+
+<!-- CSS -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css"/>
+<link rel="stylesheet" href="dist/styles/styles.min.css">
+</head>
+
+<!--Body-->
+
+<body ng-app="sfApp">
+<div class="container">
+<div id="header">
+  <div>
+
+  <ul>
+    <a href="#/map"><li>Map</li></a>
+    <a href="#"><li>Database</li></a>
+    <a href="#/blog"><li>Blog</li></a>
+  </ul>
+    <h1><a href="#">sanfrancisco<span>DB</span></a></h1>
+</div>
+</div>
+
+
+<section id="nav">
+
+<div ng-controller="dbCtrl">
+<div class="text-center">
+    <div class="cat">
+        <a href="#" ng-click='filterCriteria={}; currentPage=reset()' data-toggle="tooltip" data-placement="bottom" title="Reset"><i class="white fa fa-ban fa-2x"></i></a>
+        <a ng-click='filterCriteria.type="residential"; currentPage=reset()' data-toggle="tooltip" data-placement="bottom" title="Residential"><i class="white fa fa-home fa-2x"></i></a>
+        <a ng-click='filterCriteria.type="infrastructure"; currentPage=reset()' data-toggle="tooltip" data-placement="bottom" title="Infrastructure"><i class="white fa fa-truck fa-2x"></i></a>
+        <a ng-click='filterCriteria.type="office"; currentPage=reset()' data-toggle="tooltip" data-placement="bottom" title="Office"><i class="white fa fa-building fa-2x"></i></a>
+        <a ng-click='filterCriteria.type="attraction"; currentPage=reset()' data-toggle="tooltip" data-placement="bottom" title="Attraction"><i class="white fa fa-bank fa-2x"></i></a>
+        <div>
+        <a class="btn" ng-disabled="currentPage<1" ng-click="currentPage=currentPage-1"><i class="fa fa-angle-double-left fa-2x"></i></a> {{currentPage+1}} of {{numberOfPages()}}
+        <a class="btn" ng-disabled="currentPage >= boxes.length/pageSize-1;" ng-click="currentPage=currentPage+1"><i class="fa fa-angle-double-right fa-2x"></i></a>
+        </div>
+    </div>
+<div class="clear"></div>
+
+  <div class="list text-center">
+  <ul>
+    <li class="boxes repeat-item animate" ng-repeat="box in boxes | filter:filterCriteria | orderBy:orderProp | startFrom:currentPage*pageSize | limitTo: pageSize">
+      <a href="#/{{box.id}}" active-link="active">
+        <div class="work" >
+          <img class="pull-left" ng-src="{{box.imageUrl}}">
+          <h4>{{box.name}}
+          </h4>
+        </div></a>
+    </li>
+  </ul>
+  <div class="clear"></div>
+
+
+  </div>
+    </div>
+    </div>
+</section>
+
+<section id="main">
+  <div ng-view ng-controller="dtCtrl">
+  </div>
+</section>
+<div class="clear"></div>
+
+<footer>
+  <div class="pull-left">
+    Copyright SFDB 2015
+  </div>
+  <div class="pull-right">
+    <div class="ficons">
+    Contact
+    <a href="http://www.linkedin.com/in/tylerjamesgreve"><i class="fa fa-linkedin-square fa-lg"></i></a>
+    <a href="https://github.com/fimiak"><i class="fa fa-github fa-lg"></i></a>
+    <a href="https://twitter.com/tjgreve"><i class="fa fa-twitter fa-lg"></i></a>
+    <a href="mailto:tylerjamesgreve@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- Scripts -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-resource.min.js"></script>
+<script type="text/javascript" src="client/bower_components/slick/slick.min.js"></script>
+<script type="text/javascript" src="dist/scripts/main.js"></script>
+</body>
+</html>

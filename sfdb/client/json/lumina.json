@@ -8,9 +8,9 @@
     "snippet": "New luxury residential units coming to SoMa.",
     "website": "http://www.luminasf.com/",
     "images": [
-      "img/lumina-1.jpg",
-      "img/lumina-2.jpg",
-      "img/lumina-3.jpg",
-      "img/lumina-4.jpg"
+      "dist/img/lumina-1.jpg",
+      "dist/img/lumina-2.jpg",
+      "dist/img/lumina-3.jpg",
+      "dist/img/lumina-4.jpg"
     ]
 }

@@ -7,9 +7,9 @@
     "snippet": "The new tallest building in San Francisco. Construction began in 2014. The architect is Cesar Pelli. Developed by Hines.",
     "website": "http://www.sfmoma.org/",
     "images": [
-      "img/salesforce-1.jpg",
-      "img/sfmoma-2.jpg",
-      "img/sfmoma-3.jpg",
-      "img/sfmoma-4.jpg"
+      "dist/img/salesforce-1.jpg",
+      "dist/img/sfmoma-2.jpg",
+      "dist/img/sfmoma-3.jpg",
+      "dist/img/sfmoma-4.jpg"
     ]
 }

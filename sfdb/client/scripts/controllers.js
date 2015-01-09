@@ -12,7 +12,6 @@ dbCtrl.controller('dbCtrl', ['$scope', '$location', 'Box', function ($scope, $lo
   for (var i=0; i<6; i++) {
     $scope.boxes.push(i);
   }
-  $scope.test = 'one';
 }]);
 
 dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $routeParams, Box) {

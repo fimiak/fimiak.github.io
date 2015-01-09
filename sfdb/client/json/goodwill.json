@@ -8,7 +8,7 @@
     "snippet": "Goodwill on Van Ness and Mission St has been sold. Renders and more details to come. Height and completion are placeholders.",
     "website": "#",
     "images": [
-      "img/goodwill-1.jpg",
-      "img/goodwill-2.jpg"
+      "dist/img/goodwill-1.jpg",
+      "dist/img/goodwill-2.jpg"
     ]
 }

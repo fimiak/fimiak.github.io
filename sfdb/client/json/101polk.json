@@ -8,7 +8,7 @@
     "snippet": "Thirteen story fill-in on Polk street near Market and City Hall.",
     "website": "N/A",
     "images": [
-      "img/101polk-1.jpg",
-      "img/101polk-2.jpg"
+      "dist/img/101polk-1.jpg",
+      "dist/img/101polk-2.jpg"
     ]
 }

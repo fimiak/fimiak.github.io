@@ -7,8 +7,8 @@
     "snippet": "New luxury office space on Mission St near the Transbay Terminal. Will have public art space at the base.",
     "website": "http://535mission.com/",
     "images": [
-      "img/535mission-1.jpg",
-      "img/535mission-2.jpg",
-      "img/535mission-3.jpg"
+      "dist/img/535mission-1.jpg",
+      "dist/img/535mission-2.jpg",
+      "dist/img/535mission-3.jpg"
     ]
 }

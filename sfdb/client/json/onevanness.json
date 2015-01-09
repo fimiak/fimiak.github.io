@@ -8,8 +8,8 @@
     "snippet": "Mid-Market luxury residential building. While still just a proposal, this may succeed in filling in surface parking with much needed new housing.",
     "website": "N/A",
     "images": [
-      "img/onevanness-1.jpg",
-      "img/onevanness-2.jpg",
-      "img/onevanness-3.jpg"
+      "dist/img/onevanness-1.jpg",
+      "dist/img/onevanness-2.jpg",
+      "dist/img/onevanness-3.jpg"
     ]
 }

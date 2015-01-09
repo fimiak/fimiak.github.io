@@ -7,7 +7,7 @@
     "snippet": "A new cruise terminal for San Francisco on Pier 27.",
     "website": "N/A",
     "images": [
-      "img/cruiseterminal-1.jpg",
-      "img/cruiseterminal-2.jpg"
+      "dist/img/cruiseterminal-1.jpg",
+      "dist/img/cruiseterminal-2.jpg"
     ]
 }
