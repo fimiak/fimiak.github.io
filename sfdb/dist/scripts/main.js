@@ -7,12 +7,12 @@ sfApp.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'client/partials/about.html',
         controller: 'dbCtrl'
     })
+      .when('/home', {
+        templateUrl: 'client/partials/about.html',
+        controller: 'dbCtrl'
+    })
       .when('/blog', {
         templateUrl: 'client/partials/blog.html',
-        controller: ''
-    })
-      .when('/map', {
-        templateUrl: 'client/partials/map.html',
         controller: ''
     })
       .when('/:boxId', {
