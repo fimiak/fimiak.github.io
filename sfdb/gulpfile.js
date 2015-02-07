@@ -44,7 +44,7 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
- 
+
 // Clean
 gulp.task('clean', function(cb) {
     del(['dist/css', 'dist/js', 'dist/img'], cb)

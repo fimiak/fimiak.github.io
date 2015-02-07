@@ -7,7 +7,7 @@ sfApp.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'client/partials/about.html',
         controller: 'dbCtrl'
     })
-      .when('/home', {
+      .when('/about', {
         templateUrl: 'client/partials/about.html',
         controller: 'dbCtrl'
     })
