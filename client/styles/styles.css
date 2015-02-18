@@ -95,7 +95,9 @@ nav {
   flex-direction: row;
   -webkit-flex-direction: row;
   align-items: flex-end;
-  justify-content: center; }
+  -webkit-align-items: flex-end;
+  justify-content: center;
+  -webkit-justify-content: center; }
   nav h2 {
     margin-right: auto;
     transition: 0.5s;
@@ -143,7 +145,9 @@ nav {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  flex-direction: row; }
+  -webkit-justify-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row; }
 
 .skills h3 {
   font-family: "Roboto Condensed";
@@ -170,7 +174,8 @@ nav {
   text-align: center;
   display: flex;
   display: -webkit-flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; }
   #work img {
     width: 257px;
     height: 385px; }
@@ -225,7 +230,9 @@ footer img {
 
 .links {
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
   width: 100%;
   padding: 80px 0;
   justify-content: center; }
