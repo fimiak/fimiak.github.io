@@ -41,11 +41,9 @@ function onScroll(event){
 $(window).scroll(function() {
     if($(document).scrollTop() > 50) {
         $('nav').addClass('shrink');
-        $('nav i').removeClass('fa-lg');
         }
     else {
         $('nav').removeClass('shrink');
-        $('nav i').addClass('fa-lg');
     }
 });
 
