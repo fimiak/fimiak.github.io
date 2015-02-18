@@ -39,7 +39,7 @@ function onScroll(event){
 }
 
 $(window).scroll(function() {
-    if($(document).scrollTop() > 0) {
+    if($(document).scrollTop() > 50) {
         $('nav').addClass('shrink');
         $('nav i').removeClass('fa-lg');
         }
@@ -49,3 +49,6 @@ $(window).scroll(function() {
     }
 });
 
+$("#intro").click(function() {
+    scroll(0,0);
+});
