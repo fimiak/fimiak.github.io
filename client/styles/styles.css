@@ -270,7 +270,7 @@ footer img {
     line-height: 37px; }
 
   .box {
-    width: 80%;
+    width: auto;
     margin: 0 auto; }
 
   #intro {
