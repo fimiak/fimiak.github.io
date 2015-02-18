@@ -38,21 +38,14 @@ function onScroll(event){
     });
 }
 
-$('nav').hover(function() {
-    $('nav i').addClass('fa-spin');
-}, function() {
-    $('nav i').removeClass('fa-spin');
-})
-
-
 $(window).scroll(function() {
     if($(document).scrollTop() > 0) {
         $('nav').addClass('shrink');
-        $('nav i').removeClass('fa-spin');
+        $('nav i').removeClass('fa-lg');
         }
     else {
         $('nav').removeClass('shrink');
-        $('nav i').addClass('fa-spin');
+        $('nav i').addClass('fa-lg');
     }
 });
 

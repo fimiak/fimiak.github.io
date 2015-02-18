@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,600|Roboto+Condensed:400,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,600|Roboto+Condensed:400,600|EB+Garamond:400);
 @font-face {
   font-family: Lato; }
 ::selection {
@@ -26,6 +26,14 @@ body {
 p, span {
   font-weight: 300;
   font-size: 14px; }
+
+a:hover {
+  border-bottom: 2px solid black;
+  text-decoration: none; }
+a:focus {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #ffefd0; }
 
 section {
   clear: both; }
@@ -87,14 +95,15 @@ nav {
   justify-content: center; }
   nav h2 {
     margin-right: auto;
-    transition: 0.5s; }
+    transition: 0.5s;
+    font-family: "Roboto Condensed"; }
   nav li {
     display: inline; }
   nav a {
     position: relative;
     margin: 0;
     font-weight: 600;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", serif;
     text-transform: uppercase;
     margin-left: 5px;
     font-size: 16px;
@@ -109,10 +118,12 @@ nav {
       border-bottom: 2px solid #ffefd0; }
 
 #intro {
-  padding: 160px 0 0 0; }
+  padding: 160px 0 50px 0; }
   #intro p {
     font-size: 38px;
     color: #000;
+    font-weight: 400;
+    font-family: "EB Garamond", sans-serif;
     text-indent: 350px;
     margin: 40px 0; }
 
@@ -124,17 +135,28 @@ nav {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 50px 0; }
 
 .skills h3 {
-  font-family: "Roboto Condensed"; }
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-size: 24px; }
 
 .skills div ul {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap; }
 
 .skills li, .skills h3 {
-  text-align: center; }
+  text-align: left; }
+
+.right li, .right h3 {
+  text-align: right;
+  padding-right: 30px; }
+
+.skills li {
+  font-size: 20px;
+  font-family: "EB Garamond", serif; }
 
 #work {
   padding-top: 50px;
@@ -159,29 +181,36 @@ nav {
     font-size: 12px; }
 
 footer div span {
-  font-size: 40px;
-  vertical-align: center; }
+  font-size: 38px;
+  font-family: "EB Garamond";
+  vertical-align: text-top; }
 footer img {
   width: 200px;
   height: 200px;
   vertical-align: bottom; }
 
 .foot {
-  width: 250px;
-  height: 250px; }
+  width: 350px;
+  height: 200px; }
 
-.foot h3, .foot p {
-  margin-bottom: 5px; }
+.foot h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "EB Garamond", serif; }
+
+.foot p, .foot a {
+  margin-bottom: 15px;
+  font-family: "EB Garamond", serif; }
 
 .links {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 50px 0;
+  margin: 80px 0;
   justify-content: center; }
 
 .links a {
-  padding: 5px;
   font-size: 16px; }
 
 .clear {
