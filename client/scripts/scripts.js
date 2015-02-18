@@ -37,3 +37,22 @@ function onScroll(event){
         }
     });
 }
+
+$('nav').hover(function() {
+    $('nav i').addClass('fa-spin');
+}, function() {
+    $('nav i').removeClass('fa-spin');
+})
+
+
+$(window).scroll(function() {
+    if($(document).scrollTop() > 0) {
+        $('nav').addClass('shrink');
+        $('nav i').removeClass('fa-spin');
+        }
+    else {
+        $('nav').removeClass('shrink');
+        $('nav i').addClass('fa-spin');
+    }
+});
+
