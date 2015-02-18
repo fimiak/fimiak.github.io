@@ -28,7 +28,10 @@ body
 p, span
   font-weight: 300
   font-size: 14px
+
 a
+  &:-webkit-any-link
+    text-decoration: none
   &:hover
     border-bottom: 2px solid black
     text-decoration: none
@@ -47,7 +50,6 @@ h1, h2
   clear: both
   text-transform: uppercase
   letter-spacing: .1em
-  display: block
 
 h1
   font-size: 36px
@@ -104,7 +106,7 @@ nav
     margin-right: auto
     transition: .5s
     line-height: 40px
-    font-family: "Roboto Condensed"
+    font-family: "Roboto Condensed", serif
   li
     display: inline
   ul
@@ -113,9 +115,9 @@ nav
     position: relative
     margin: 0
     font-weight: 600
-    font-family: 'Roboto Condensed', serif
+    font-family: 'Roboto Condensed', 'Lato', serif
     text-transform: uppercase
-    margin-left: 5px
+    margin-left: 6px
     padding: 0
     font-size: 16px
     float: right
@@ -181,8 +183,13 @@ nav
   img
     width: 257px
     height: 385px
+  a
+    border-bottom: none
+    &:hover h2
+      text-decoration: underline
   h2
     font-family: 'Roboto Condensed'
+
 
 #work .boxlarge img
   width: 539px
@@ -269,7 +276,7 @@ footer
       a
         font-size: 12px
         &:first-child
-          margin-left: 10px
+          margin-left: 12px
 
   .fa-gear
     display: none

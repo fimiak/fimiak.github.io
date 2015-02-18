@@ -27,6 +27,8 @@ p, span {
   font-weight: 300;
   font-size: 14px; }
 
+a:-webkit-any-link {
+  text-decoration: none; }
 a:hover {
   border-bottom: 2px solid black;
   text-decoration: none; }
@@ -44,8 +46,7 @@ section, div {
 h1, h2 {
   clear: both;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  display: block; }
+  letter-spacing: 0.1em; }
 
 h1 {
   font-size: 36px;
@@ -102,7 +103,7 @@ nav {
     margin-right: auto;
     transition: 0.5s;
     line-height: 40px;
-    font-family: "Roboto Condensed"; }
+    font-family: "Roboto Condensed", serif; }
   nav li {
     display: inline; }
   nav ul {
@@ -111,9 +112,9 @@ nav {
     position: relative;
     margin: 0;
     font-weight: 600;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", "Lato", serif;
     text-transform: uppercase;
-    margin-left: 5px;
+    margin-left: 6px;
     padding: 0;
     font-size: 16px;
     float: right;
@@ -179,6 +180,10 @@ nav {
   #work img {
     width: 257px;
     height: 385px; }
+  #work a {
+    border-bottom: none; }
+    #work a:hover h2 {
+      text-decoration: underline; }
   #work h2 {
     font-family: "Roboto Condensed"; }
 
@@ -264,7 +269,7 @@ footer img {
     nav li a {
       font-size: 12px; }
       nav li a:first-child {
-        margin-left: 10px; }
+        margin-left: 12px; }
 
   .fa-gear {
     display: none; }
