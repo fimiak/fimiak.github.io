@@ -276,7 +276,7 @@ footer {
 .clear {
   clear: both; }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px), (-webkit-device-pixel-ratio: 2) {
   .wrap {
     padding: 0 10px; }
 
