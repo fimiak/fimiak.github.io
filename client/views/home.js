@@ -15,25 +15,17 @@ angular.module('profileApp.home', ['ngRoute'])
 
  $scope.about = function() {
  	$location.url('/');
- 	$location.hash('footer');
- 	$anchorScroll();
  };
 
  $scope.skills = function() {
  	$location.url('/');
- 	$location.hash('skills');
- 	$anchorScroll();
  };
 
  $scope.work = function() {
   	$location.url('/');
- 	$location.hash('work');
- 	$anchorScroll();
  };
 
  $scope.intro = function() {
  	$location.url('/');
- 	$location.hash('intro');
- 	$anchorScroll();
  };
 }]);

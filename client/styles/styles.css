@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,600|EB+Garamond:400);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,600|EB+Garamond:400|Montserrat:400);
 ::selection {
   background: #ffbf83;
   color: #fff; }
@@ -43,13 +43,13 @@ section, div {
 h1, h2 {
   clear: both;
   text-transform: uppercase;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  font-family: Montserrat, Helvetica, sans-serif; }
 
 h1 {
   font-size: 36px;
   text-align: center;
-  padding: 60px 0 40px 0;
-  font-family: Roboto Condensed, Helvetica, sans-serif; }
+  padding: 60px 0 40px 0; }
 
 h2 {
   font-size: 28px; }
@@ -101,7 +101,7 @@ nav {
     margin-right: auto;
     transition: 0.5s;
     line-height: 40px;
-    font-family: "Roboto Condensed", serif; }
+    font-family: Montserrat, Helvetica, sans-serif; }
   nav li {
     display: inline; }
   nav ul {
@@ -110,7 +110,7 @@ nav {
     position: relative;
     margin: 0;
     font-weight: 600;
-    font-family: Roboto Condensed, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, sans-serif;
     text-transform: uppercase;
     margin-left: 6px;
     padding: 0;
@@ -125,6 +125,9 @@ nav {
       text-decoration: none;
       color: #000;
       border-bottom: 2px solid #f2d9cc; }
+
+.active {
+  border-bottom: 1px solid black; }
 
 #intro {
   padding: 200px 0 50px 0; }
@@ -150,7 +153,7 @@ nav {
   -webkit-flex-direction: row; }
 
 .skills h3 {
-  font-family: Roboto Condensed, Helvetica, sans-serif;
+  font-family: Montserrat, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 24px; }
 
@@ -184,7 +187,7 @@ nav {
     #work ul a:hover h2 {
       text-decoration: underline; }
   #work ul h2 {
-    font-family: Roboto Condensed, Helvetica, sans-serif; }
+    font-family: Montserrat, Helvetica, sans-serif; }
 
 .repeat li:nth-child(1) div img, .repeat li:nth-child(6) div img {
   min-width: 539px; }
@@ -199,7 +202,24 @@ nav {
     margin-top: 5px; }
 
 #details {
-  padding-top: 200px; }
+  padding-top: 150px; }
+
+.button {
+  border: 2px solid #222;
+  padding: 10px 20px;
+  font-size: 15px;
+  letter-spacing: -1px;
+  display: block;
+  font-family: Montserrat, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f2d9cc;
+  transition: 0.3s; }
+  .button:hover {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #111; }
 
 footer {
   padding: 50px 0 0 0; }
@@ -269,7 +289,7 @@ footer {
       line-height: 35px; }
 
   nav {
-    height: 80px; }
+    height: 120px; }
     nav h2 {
       font-size: 13px;
       line-height: 40px; }
@@ -282,7 +302,7 @@ footer {
     display: none; }
 
   .shrink {
-    height: 50px; }
+    height: 80px; }
 
   .shrink h2 {
     font-size: 13px;
@@ -329,6 +349,15 @@ footer {
 
   footer div span {
     font-size: 20px; }
+
+  #details {
+    padding-top: 100px; }
+
+  .button {
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-size: 11px;
+    width: 110px; }
 
   .foot {
     height: 200px;

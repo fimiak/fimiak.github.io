@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('.nav a').each(function () {
+    $('.nav ul li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
@@ -49,6 +49,37 @@ $(window).scroll(function() {
 $(document).ready(function(){
     $(document).on('click', '.scroll', function() {
         $('html, body').animate({scrollTop: 0}, 600);
+        return false;
+    }); 
+    });
+
+$(document).ready(function(){
+    $(document).on('click', '.aboutscroll', function() {
+        $('html, body').animate({scrollTop: 2500}, 1000);
+        return false;
+    }); 
+    });
+
+
+$(document).ready(function(){
+    $(document).on('click', '.skillsscroll', function() {
+        $('html, body').animate({scrollTop: 2175}, 1000);
+        return false;
+    }); 
+    });
+
+
+$(document).ready(function(){
+    $(document).on('click', '.projectsscroll', function() {
+        $('html, body').animate({scrollTop: 500}, 1000);
+        return false;
+    }); 
+    });
+
+
+$(document).ready(function(){
+    $(document).on('click', '.introscroll', function() {
+        $('html, body').animate({scrollTop: 0}, 1000);
         return false;
     }); 
     });
