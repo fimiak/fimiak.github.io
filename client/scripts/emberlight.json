@@ -1,0 +1,9 @@
+{
+    "id": "emberlight",
+    "name": "Emberlight",
+    "tech": "jQuery",
+    "link": "https://github.com/fimiak/emberlight",
+    "year": "2014",
+    "quote": "A link to my github code for the project Emberlight. The project has since been transferred to another developer.",
+    "images": "../client/img/bulbphone.png"
+}

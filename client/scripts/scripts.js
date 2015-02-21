@@ -21,7 +21,6 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-});
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
@@ -47,6 +46,10 @@ $(window).scroll(function() {
     }
 });
 
-$("#intro").click(function() {
-    scroll(0,0);
+$(document).ready(function(){
+    $(document).on('click', '.scroll', function() {
+        $('html, body').animate({scrollTop: 0}, 600);
+        return false;
+    }); 
+    });
 });

@@ -1,0 +1,27 @@
+.ng-enter {
+    -webkit-transition: .5s linear all;
+    transition: .5s linear all;
+    opacity: 0;
+    transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+}
+
+.ng-enter.ng-enter-active {
+    -webkit-transition: .5s linear all;
+    transition: .5s linear all;
+    transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+    opacity: 1;
+}
+
+.ng-leave {
+    -webkit-transition: .3s linear all;
+    transition: .3s linear all;
+    opacity: 1;
+}
+
+.ng-leave.ng-leave-active {
+    -webkit-transition: .3s linear all;
+    transition: .3s linear all;
+    opacity: 0;
+}

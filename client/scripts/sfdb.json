@@ -1,0 +1,9 @@
+{
+    "id": "sfdb",
+    "name": "San Francisco Database",
+    "tech": "AngularJS",
+    "link": "/sfdb/index.html",
+    "year": "2014",
+    "quote": "The San Francisco Database is intended to show database control, and AngularJS front end skills.",
+    "images": "../client/img/sf.jpg"
+}

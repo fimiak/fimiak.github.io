@@ -1,0 +1,9 @@
+{
+    "id": "sudoku",
+    "name": "Sudoku",
+    "tech": "JavaScript",
+    "link": "/sudoku/index.html",
+    "year": "2014",
+    "quote": "Sudoku is one of my favorite puzzle games. I built this project to show a combination of JavaScript knowledge integrated into a working game.",
+    "images": "../client/img/sudoku.png"
+}

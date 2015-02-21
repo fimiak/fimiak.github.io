@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sfdb",
+    "name": "San Francisco DB",
+    "tech": "AngularJS",
+    "image": "client/img/sf.jpg"
+  },
+   {
+    "id": "sudoku",
+    "name": "Sudoku",
+    "tech": "JavaScript",
+    "image": "client/img/sudoku.png"
+  },
+   {
+    "id": "safeti",
+    "name": "Safeti",
+    "tech": "jQuery",
+    "image": "client/img/safeti.jpg"
+  },
+   {
+    "id": "emberlight",
+    "name": "Emberlight",
+    "tech": "jQuery",
+    "image": "client/img/bulbphone.png"
+  },
+   {
+    "id": "eia",
+    "name": "English in America",
+    "tech": "WordPress",
+    "image": "client/img/eia.png"
+  },
+   {
+    "id": "wlb",
+    "name": "World Leader Bulletin",
+    "tech": "AngularJS",
+    "image": "client/img/obama.jpg"
+  },
+  {
+    "id": "github",
+    "name": "Github",
+    "tech": "Various",
+    "image": "client/img/sudoku.png"
+  }
+]

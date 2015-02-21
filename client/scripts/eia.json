@@ -1,0 +1,9 @@
+{
+    "id": "eia",
+    "name": "English in America",
+    "tech": "WordPress",
+    "link": "https://englishinamerica.wordpress.com/",
+    "year": "2013",
+    "quote": "English in America is a blog created for an English as a Second Language teacher. It uses Wordpress extensively.",
+    "images": "../client/img/eia.png"
+}

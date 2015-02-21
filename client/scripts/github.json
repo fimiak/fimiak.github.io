@@ -1,0 +1,9 @@
+{
+    "id": "github",
+    "name": "Github",
+    "tech": "Various",
+    "link": "https://github.com/fimiak",
+    "year": "2013-2015",
+    "quote": "This is a link to my Github profile. Github is a website for programmers to share code and cooperate within projects.",
+    "images": "../client/img/github.jpg"
+}

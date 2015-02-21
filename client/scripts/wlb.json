@@ -1,0 +1,9 @@
+{
+    "id": "wlb",
+    "name": "World Leader Bulletin",
+    "tech": "AngularJS",
+    "link": "#/",
+    "year": "2015",
+    "quote": "Under Construction.",
+    "images": "../client/img/obama.jpg"
+}
