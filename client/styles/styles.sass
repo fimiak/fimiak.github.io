@@ -135,6 +135,13 @@ nav
       color: #000
       border-bottom: 2px solid $bgcolor
 
+.menu
+  display: none
+  float: right
+  border-bottom: none
+  &:hover
+    border-bottom: none
+
 .active
   border-bottom: 1px solid black
 
@@ -149,37 +156,36 @@ nav
     font-family: $serif
     margin: 40px 0
 
-.skills ul
-  padding: 0
-  width: 200px
-
 .skills
   display: flex
   display: -webkit-flex
   justify-content: center
+  flex-wrap: wrap
+  -webkit-flex-wrap: wrap
   -webkit-justify-content: center
   flex-direction: row
   -webkit-flex-direction: row
-
-.skills h3
-  font-family: $sans
-  text-transform: uppercase
-  font-size: 24px
-
-.skills div ul
-  flex-wrap: wrap
-  -webkit-flex-wrap: wrap
-
-.skills li, .skills h3
-  text-align: left
+  justify-content: center
+  -webkit-justify-content: center
+  max-width: 800px
+  margin: 0 auto
+  ul
+    padding: 0
+  div
+    width: 24%
+  h3
+    font-family: $sans
+    text-transform: uppercase
+    font-size: 24px
+    text-align: left
+  li
+    text-align: left
+    font-size: 20px
+    font-family: $serif
 
 .right li, .right h3
   text-align: right
-  padding-right: 30px
-
-.skills li
-  font-size: 20px
-  font-family: $serif
+  padding-right: 10%
 
 #work ul
   padding: 20px 0
@@ -188,6 +194,8 @@ nav
   display: -webkit-flex
   flex-wrap: wrap
   -webkit-flex-wrap: wrap
+  justify-content: center
+  -webkit-justify-content: center
   img
     width: 257px
     height: 385px
@@ -212,9 +220,13 @@ nav
 
 #details
   padding-top: 150px
+  h2
+    text-align: center
+  p
+    font-size: 18px
 
 .button
-  border: 2px solid #222
+  border: none
   padding: 10px 20px
   font-size: 15px
   letter-spacing: -1px
@@ -222,13 +234,13 @@ nav
   font-family: $sans
   margin-bottom: 20px
   width: 160px
-  background-color: rgba(0,0,0,.7)
-  color: $bgcolor
+  background-color: rgba(0,0,0,.1)
+  color: #000
   transition: .3s
   &:hover
-    color: #000
-    background-color: rgba(0,0,0,.1)
-    border-bottom: 2px solid #111
+    color: $bgcolor
+    background-color: rgba(0,0,0,.5)
+    border-bottom: none
 
 footer
   padding: 50px 0 0 0
@@ -250,7 +262,7 @@ footer
   padding: 20px 0 80px 0
 
 .foot
-  min-width: 280px
+  width: 24%
   height: 200px
 
 .foot h3
@@ -274,7 +286,8 @@ footer
   -webkit-flex-direction: row
   flex-wrap: wrap
   -webkit-flex-wrap: wrap
-  width: 100%
+  max-width: 900px
+  margin: 0 auto
   padding: 20px 0 80 0
   justify-content: center
 
@@ -284,42 +297,68 @@ footer
 .clear
   clear: both
 
-@media (max-width: 768px), (-webkit-device-pixel-ratio: 2)
+@media only screen and (max-width: 768px)
 
   .wrap
     padding: 0 10px
 
   h1
     font-size: 30px
+    padding: 20px 0 10px 0
 
   header
     padding-right: 15px
-    a
-      font-size: 15px
-      line-height: 15px
 
   nav
-    height: 100px
+    height: 160px
+    flex-direction: column
+    -webkit-flex-direction: column
+    align-items: center
+    -webkit-align-items: center
     h2
       font-size: 18px
-      line-height: 40px
+      margin: 0 auto
+      line-height: 30px
+    ul
+      padding: 0
+      margin-top: 0px
     li
       display: block
       a
-        font-size: 14px
-        &:first-child
-          margin-left: 6px
+        font-size: 18px
+        border-bottom: none
+        float: left
+        text-decoration: none
+        margin: 5px 5px
+        &:hover
+          border-bottom: none
 
-  .fa-gear
+
+  .menu
     display: none
 
   .shrink
-    height: 70px
+    height: 40px
+    flex-direction: row
+    -webkit-flex-direction: row
+    align-items: center
+    -webkit-align-items: center
+    justify-content: space-around
+    -webkit-justify-content: space-around
     h2
-      font-size: 13px
+      font-size: 18px
+      margin: 0 0
+      float: left
       line-height: 37px
     a
-      font-size: 12px
+      font-size: 20px
+      line-height: 37px
+      padding: 0px 10px
+    ul
+      display: none
+
+  .shrink .menu
+    display: block
 
   .box
     width: auto
@@ -328,18 +367,21 @@ footer
     height: 220px
 
   #intro
-    padding: 120px 0 0 0
+    padding: 200px 0 0 0
     p
       font-size: 22px
       text-indent: 50px
 
   .skills 
-    ul
-      width: 100px
+    div
+      width: 48%
     h3
       font-size: 18px
     li
-      font-size: 16px
+      font-size: 18px
+  
+  .right li, .right h3
+    padding-right: 5%
 
   #work 
     ul
@@ -368,30 +410,32 @@ footer
         font-size: 20px
 
   #details
-    padding-top: 100px
+    padding-top: 220px
+    overflow: hidden
+    h2
+      font-size: 22px
+    p
+      display: block
+      font-size: 18px
 
   .button
-    border: 2px solid black
-    padding: 5px 10px
-    font-size: 11px
-    width: 110px
+    padding: 15px 30px
+    font-size: 18px
+    width: 200px
+    margin: 20px auto
 
   .foot
     height: 200px
-    min-width: 140px
+    width: 48%
     h3
-      font-size: 12px
+      font-size: 15px
       margin-bottom: 10px
     p
-      font-size: 11px
-      margin-bottom: 5px
+      font-size: 13px
+      margin-bottom: 10px
     a
-      font-size: 11px
+      font-size: 14px
       margin-bottom: 0px
-  footer
-    img
-      min-width: 150px
-      height: 150px
 
 
 /* James Greve 2015 */
