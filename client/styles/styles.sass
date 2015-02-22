@@ -73,10 +73,21 @@ ul
   padding: 0 50px
 
 hr
-  color: #333
-  border-top: 1px solid black
-  max-width: 100%
-  margin: 80px auto
+  text-align: center
+  border: 1px dotted #8c8b8b
+  opacity: .5
+  margin: 50px 0
+
+hr:after
+  content: '\002660'
+  display: inline-block
+  position: relative
+  top: -10px
+  padding: 0 10px
+  background: $bgcolor
+  color: #8c8b8b
+  font-size: 18px
+
 
 header 
   width: 100%
@@ -232,7 +243,7 @@ nav
   letter-spacing: -1px
   display: block
   font-family: $sans
-  margin-bottom: 20px
+  margin: 20px 0px
   width: 160px
   background-color: rgba(0,0,0,.1)
   color: #000
@@ -290,6 +301,7 @@ footer
   margin: 0 auto
   padding: 20px 0 80 0
   justify-content: center
+  -webkit-justify-content: center
 
 .links a
   font-size: 16px
@@ -422,7 +434,7 @@ footer
     padding: 15px 30px
     font-size: 18px
     width: 200px
-    margin: 20px auto
+    margin: 20px auto 20px auto
 
   .foot
     height: 200px
