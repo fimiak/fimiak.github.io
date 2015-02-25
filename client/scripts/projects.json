@@ -40,5 +40,11 @@
     "name": "Github",
     "tech": "Various",
     "image": "client/img/sudoku.png"
+  },
+  {
+    "id": "wordpress",
+    "name": "WordPress",
+    "tech": "WordPress",
+    "image": "client/img/wordpress.png"
   }
 ]

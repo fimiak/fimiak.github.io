@@ -1,0 +1,9 @@
+{
+    "id": "wordpress",
+    "name": "WordPress",
+    "tech": "WordPress",
+    "link": "../wp",
+    "year": "2014",
+    "quote": "This is a WordPress Custom Theme handwritten by me. It uses HTML, CSS, Foundation, jQuery and PHP.",
+    "images": "../client/img/wordpress.png"
+}
