@@ -18,22 +18,21 @@ html, body, div, header, footer, h2, h1, h3, a {
     color: #000; }
 
 body {
-  background-color: #f2d9cc;
-  font-size: 16px; }
+  background-color: #f2d9cc; }
 
 p, span {
   font-weight: 300;
-  font-size: 1em; }
+  font-size: 14px; }
 
 a:-webkit-any-link {
   text-decoration: none; }
 a:hover {
-  border-bottom: 1em solid black;
+  border-bottom: 2px solid black;
   text-decoration: none; }
 a:focus {
   text-decoration: none;
   color: #000;
-  border-bottom: 1em solid #f2d9cc; }
+  border-bottom: 2px solid #f2d9cc; }
 
 section {
   clear: both; }
@@ -48,33 +47,33 @@ h1, h2 {
   font-family: Montserrat, Helvetica, sans-serif; }
 
 h1 {
-  font-size: 2em;
+  font-size: 36px;
   text-align: center;
   padding: 60px 0 40px 0; }
 
 h2 {
-  font-size: 2em; }
+  font-size: 28px; }
 
 h3 {
-  font-size: 2em; }
+  font-size: 20px; }
 
 ul {
   list-style: none;
   padding: none; }
 
 .wrap {
-  padding: 0 3%; }
+  padding: 0 50px; }
 
 hr {
   text-align: center;
   border: 1px dotted #8c8b8b;
   opacity: 0.5;
-  margin: 2% 0; }
+  margin: 50px 0; }
 
 header {
   width: 100%;
   position: fixed;
-  padding-right: 5%;
+  padding-right: 100px;
   background-color: #f2d9cc;
   transition: 0.5s; }
 
@@ -82,9 +81,9 @@ header {
   height: 40px; }
 
 .shrink h2 {
-  font-size: 1.5em;
+  font-size: 18px;
   transition: 0.5s;
-  line-height: 1.5em; }
+  line-height: 28px; }
 
 nav {
   display: flex;
@@ -135,14 +134,17 @@ nav {
   .menu:hover {
     border-bottom: none; }
 
+.active {
+  border-bottom: 1px solid black; }
+
 #intro {
   padding: 200px 0 50px 0; }
   #intro p {
-    font-size: 2.5em;
+    font-size: 44px;
     color: #000;
     padding: 0 23px;
     font-weight: 400;
-    text-indent: 5em;
+    text-indent: 150px;
     font-family: EB Garamond, serif;
     margin: 40px 0; }
 
@@ -180,17 +182,12 @@ nav {
 #work ul {
   padding: 20px 0;
   text-align: center;
-  max-width: 1150px;
-  margin: 0 auto;
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   justify-content: center;
   -webkit-justify-content: center; }
-  #work ul li {
-    align-items: center;
-    -webkit-align-items: center; }
   #work ul img {
     width: 257px;
     height: 385px; }
@@ -206,17 +203,12 @@ nav {
 
 .box {
   transition: 0.5s;
-  padding: 10px 10px;
+  padding-left: 23px;
   height: 440px;
   overflow: hidden; }
   .box h2 {
     font-size: 13px;
     margin-top: 5px; }
-
-.scroll {
-  transition: 0.5s; }
-  .scroll:last-child:hover {
-    background-color: #D9C3B7; }
 
 #details {
   padding-top: 150px; }
@@ -248,11 +240,11 @@ footer {
     display: flex;
     flex-direction: column; }
     footer div span {
-      font-size: 2.5em;
+      font-size: 38px;
       font-family: EB Garamond, serif; }
   footer img {
-    min-width: 10em;
-    height: 10em;
+    min-width: 200px;
+    height: 200px;
     float: left;
     margin-right: 10px; }
 
@@ -263,15 +255,16 @@ footer {
 
 .foot {
   width: 24%;
-  padding: 0 1%; }
+  height: 200px; }
 
 .foot h3 {
   margin: 10px 0;
-  font-size: 1em;
+  font-size: 16px;
   text-transform: uppercase;
   font-family: EB Garamond, serif; }
 
 .foot p, .foot a {
+  margin-bottom: 15px;
   font-family: EB Garamond, serif; }
 
 .foot a:hover {
@@ -291,20 +284,13 @@ footer {
   justify-content: center;
   -webkit-justify-content: center; }
 
-.foot:nth-child(3), .foot:nth-child(4) {
-  align-items: flex-end;
-  -webkit-align-items: flex-end; }
-
 .links a {
-  font-size: 1.2em; }
+  font-size: 16px; }
 
 .clear {
   clear: both; }
 
-@media only screen and (max-width: 768px) {
-  .body {
-    font-size: 16px; }
-
+@media only screen and (max-width: 667px) {
   .wrap {
     padding: 0 10px; }
 
@@ -367,8 +353,9 @@ footer {
 
   .box {
     width: auto;
+    padding-left: 11.5;
     margin: 0 auto;
-    height: 310px; }
+    height: 220px; }
 
   #intro {
     padding: 200px 0 0 0; }
@@ -387,17 +374,17 @@ footer {
     padding-right: 5%; }
 
   #work ul img {
-    width: 169.6px;
-    height: 254.1px; }
+    width: 128.5px;
+    height: 192.5px; }
   #work h2 {
     font-size: 15px;
     margin: 6px 0px; }
 
   .repeat li:nth-child(1) div img, .repeat li:nth-child(6) div img {
-    min-width: 356.75px; }
+    min-width: 269.5px; }
 
   .box p {
-    font-size: 0.8px; }
+    font-size: 12px; }
 
   .space {
     display: none; }
@@ -428,20 +415,17 @@ footer {
     margin: 20px auto 20px auto; }
 
   .foot {
-    width: 48%;
-    align-items: center;
-    -webkit-align-items: center;
-    margin-bottom: 20px; }
+    height: 200px;
+    width: 48%; }
     .foot h3 {
+      font-size: 15px;
       margin-bottom: 10px; }
     .foot p {
+      font-size: 13px;
       margin-bottom: 10px; }
     .foot a {
-      margin-bottom: 0px; }
-
-  .foot:nth-child(3), .foot:nth-child(4) {
-    align-items: center;
-    -webkit-align-items: center; } }
+      font-size: 14px;
+      margin-bottom: 0px; } }
 /* James Greve 2015 */
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css%0Asass%20styles.sass:styles.css.map */
