@@ -14,4 +14,5 @@ angular.module('profileApp.detail', ['ngRoute'])
   $scope.projects = Project.get({projectId: $routeParams.projectId}, function(project) {
   	
   });
+
 }]);
