@@ -159,13 +159,14 @@ nav
 #intro
   padding: 200px 0 50px 0
   p
-    font-size: 2.5em
+    font-size: 1.8em
+    max-width: 1140px
     color: #000
     padding: 0 23px
     font-weight: 400
-    text-indent: 5em
+    text-align: justify
     font-family: $serif
-    margin: 40px 0
+    margin: 40px auto
 
 .skills
   display: flex
@@ -270,7 +271,7 @@ footer
     display: flex
     flex-direction: column
     span
-      font-size: 2.5em
+      font-size: 2.1em
       font-family: $serif
   img
     min-width: 10em
@@ -281,6 +282,8 @@ footer
 .quote
   align-items: center
   flex-direction: row
+  max-width: 1150px
+  margin: 0 auto
   padding: 20px 0 80px 0
 
 .foot
@@ -323,7 +326,7 @@ footer
 .clear
   clear: both
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-device-width: 768px)
 
   .body
     font-size: 16px
@@ -398,8 +401,7 @@ footer
   #intro
     padding: 160px 0 0 0
     p
-      font-size: 1.4em
-      text-indent: 50px
+      font-size: 1.3em
 
   .skills 
     div
