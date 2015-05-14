@@ -1,164 +1,100 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic)
 
 body
-  background-color: #E3F2FD
+
   font-family: 'Lato', Arial, sans-serif
   font-size: 16px
   color: #000
-
-.col-xs-4
-  padding: 0
-  margin-top: 10px
-
-.col-xs-8
-  padding: 0
-
-.container
-  width: 945px
-  margin: 0 auto
-  padding: 0px 0 0 0
-
-.drop-shadow
-  position: relative
-  float: left
-  width: 40%
-  padding: 1em
-  margin: 2em 10px 4em
-  background: #fff
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-
-.drop-shadow:before,
-.drop-shadow:after
-  content: ""
-  position: absolute
-  z-index: -2
-
-.drop-shadow p
-  font-size: 16px
-  font-weight: bold
-
-.curved:before
-  top: 10px
-  bottom: 10px
-  left: 0
-  right: 0%
-  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6)
-  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6)
-  box-shadow: 0 0 15px rgba(0,0,0,0.6)
-  -moz-border-radius: 10px / 100px
-  border-radius: 10px / 100px
-
-.curved-hz-1:before
-  top: 50%
-  bottom: 0
-  left: 10px
-  right: 10px
-  -moz-border-radius: 100px / 10px
-  border-radius: 100px / 10px
-
-.curved-hz-2:before
-  top: 0
-  bottom: 0
-  left: 10px
-  right: 10px
-  -moz-border-radius: 100px / 10px
-  border-radius: 100px / 10px
-
+  background-color: #eee
 
 /* Typography */
 p
   margin-bottom: 5px
   color: #000
+  font-size: 1em
 
 ul
   margin: 0
   padding: 0
 
+
+li
+  display: inline
+
+i
+  margin-right: 5px
+  margin-left: 5px
+
 a
-  color: #fff
+  color: #000
+  font-size: 1em
   text-decoration: none
   transition: 0.2s ease
-
-a:hover
-  text-decoration: none
-  color: #fff
+  &:hover
+    text-decoration: none
+    color: #000
 
 .btn
   border-radius: 0
   padding: 3
   color: #000
 
-ul .btn
-  padding: 6px
-
 .btn:hover
-  color: #0c3c73
+  color: #0c3c53
 
 h1
   font-weight: 900
-  color: #000
+  font-size: 2em
   margin: 0
   cursor: default
+  span
+    font-weight: 100
 
-h1 span
-  font-weight: 100
+h2
+  margin: 10px 0px 10px 0px
+  font-size: 1.8em
+  font-weight: 300
 
 h3
-  margin: 10px 0px 0px 0px
-  font-size: 46px
-  font-weight: 200
+  font-size: .8em
 
-h4
-  font-size: 13px
-  letter-spacing: -0.3px
-  text-transform: uppercase
-
-section ul
-  list-style: none
-  display: inline
-  padding: 0
-
-section li
-  display: block
+section 
+  ul
+    list-style: none
+    display: inline
+    padding: 0
+    li
+      display: block
 
 header
   width: 100%
-  background-color: #0c3c73
-  color: #fff
-  height: 75px
-  top: 0
+  height: 50px
+  transform: translate3d(0,0,0)
+  background-color: #fff
+  border-bottom: 1px solid rgba(0,0,0,.5)
+  box-shadow: 0 0 .3em #333
   z-index: 9
+  opacity: .925
   position: fixed
-
-header h1
-  font-size: 36px
-  padding: 36px 0 0 10px
-  text-align: center
-  float: left
-  color: #fff
-
-header ul
-  float: left
-
-header ul a li
-  padding: 50px 10px 0 10px
-  text-align: center
-  display: block
-  float: left
-  transition: .3s
-
-header ul a li:hover
-  background-color: #1E88E5
-
-header ul a li
-  font-size: 18px
-  font-weight: 300
-  color: #fff
+  h1
+    padding: 10px 10px 0 10px
+    float: left
+  ul
+    float: left
+    a 
+      li
+        padding: 23px 10px 4px 10px
+        display: block
+        float: left
+        transition: .3s
+        &:hover
+          background-color: #f2f2f2
+  span
+    padding: 23px 5px 0px 5px
+    font-style: italic
+    color: rgba(0,0,0,.5)
 
 #nav
-  color: #fff
   width: 100%
   background-color: #0f529e
   position: fixed
@@ -169,85 +105,161 @@ header ul a li
   transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
   -webkit-transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 
-
-#nav a
-  font-size: 12px
-  color: #fff
-
-.active .work h4
-  background-color: rgba(0,0,0,.33)
-  opacity: 1
-
-.work:hover h4
-  background-color: rgba(0,0,0,.33)
-  opacity: 1
+.active 
+  .work 
+    h3
+      opacity: 1
 
 .work
-  padding: 0px
-  transition: .5s ease
+  &:hover 
+    h3
+      color: #333
+
+.work
+  padding: 10px
+  transition: .175s ease
   margin-bottom: 0px
   cursor: pointer
-  text-align: center
-  height: 100px
-  width: 100px
+  float: left
+  background-color: #fff
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
   display: inline-block
   overflow: hidden
+  margin: 5px
+  &:hover
+    box-shadow: -2px 0 2px 0 rgba(0,0,0,.25), 2px 0 2px 0 rgba(0,0,0,.25), 0 2px 2px 0 rgba(0,0,0,0.25)
+    transform: translate3d(0,-3px,0)
 
-.work h4
+.work h3
   font-weight: 500
-  text-align: center
-  width: 100px
-  border-radius: 5px
-  height: 100px
-  display: block
-  height: 100px
-  transition: opacity .3s ease
-  -webkit-transition: opacity .3s ease
-  opacity: 0
-  color: #fff
+  color: #000
   margin: 0
-  position: absolute
+  position: relative
   z-index: 6
+  transition: .3s
 
 .work img
   float: left
-  height: 100px
-  position: relative
+  width: 18em
+
+.list
+  width: 960px
+  display: inline-block
+  ul
+    text-align: center
+
+.list ul li
+  width: 40%
+  padding: .5%
+
+
+.sidebar
+  width: 350px
+  float: left
+  text-align: center
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  padding: 5px
+  background-attachment: fixed
+  background-color: #fff
+  .cat
+    font-size: 1.5em
+    i
+      font-size: .8em
 
 .cat i
-  color: #fff
+  background-color: #fff
+  color: #999
+  padding: 10px 12px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
   cursor: pointer
-  transition: .5s
+  font-size: 2em
+  margin: 10px 1px 10px 1px
+  transition: .3s
+  &:hover
+    box-shadow: -2px 0 2px 0 rgba(0,0,0,.25), 2px 0 2px 0 rgba(0,0,0,.25), 0 2px 2px 0 rgba(0,0,0,0.25)
+    transform: translate3d(0,-5px,0)
+    color: #666
 
-.cat i:hover
-  color: #589eef
+div.filters
+  background-color: #fff
+  color: #999
+  font-style: italic
+  display: inline-block
+  padding: 9px 10px 8px 10px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  cursor: pointer
+  font-size: .65em
+  margin: 10px 2px 10px 2px
+
+div.filters-lg
+  font-size: 1.4em
+  padding: 13px 10px 8px 10px
+
+.pager
+  background-color: #fff
+  color: #999
+  display: inline-block
+  padding: 10px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  font-size: 1.1em
+  margin: 5px 5px 15px 3px
+  transition: .3s
+  &:hover
+    box-shadow: -2px 0 2px 0 rgba(0,0,0,.25), 2px 0 2px 0 rgba(0,0,0,.25), 0 2px 2px 0 rgba(0,0,0,0.25)
+    transform: translate3d(0,-3px,0)
+    color: #666
+
+.pagerspan
+  background-color: #fff
+  color: #999
+  display: inline-block
+  padding: 9px 15px 6px 15px
+  font-size: 1em
+  font-style: italic
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  margin: 15px 3px 15px 3px
+
+.web
+  background-color: #fff
+  color: #999
+  display: inline-block
+  padding: 10px 20px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  font-size: 1.1em
+  margin: 15px 3px 25px 3px
+  transition: .3s
+  &:hover
+    box-shadow: -2px 0 2px 0 rgba(0,0,0,.25), 2px 0 2px 0 rgba(0,0,0,.25), 0 2px 2px 0 rgba(0,0,0,0.25)
+    transform: translate3d(0,-3px,0)
+    color: #666
+
+.active
+  i
+    color: lightblue
+    &:hover
+      color: #8aacb8
 
 #main
-  margin: 20 auto
-  max-width: 1000px
-  min-height: 700px
+  margin: 0px auto
+  overflow: hidden
   padding: 15px
-  padding-top: 75px
-  position: relative
-
-.blog
-  background-color: rgba(250,250,250,1)
-  border: 1px solid #d1d1d1
-  margin-bottom: 20px
-  border-radius: 3px
-  display: block
-  padding: 15px 30px
-  h3
-    font-size: 22px
-    font-weight: 200
-    margin-bottom: 10px
-  p
-    font-weight: 300
-    font-size: 18px
-
-.btitle
   text-align: center
-  margin-bottom: 15px
+  padding-top: 70px
+  position: relative
 
 .summary
   background-color: rgba(250,250,250,.6)
@@ -262,31 +274,11 @@ header ul a li
   a
     color: #000
 
-/* Elements */
-
-
-i
-  margin-right: 5px
-  margin-left: 5px
-
-input, select
-  color: #000
 
 /* Classes */
 
 .text
   text-align: right
-
-li
-  display: inline
-
-.list ul li
-  display: inline-block
-  padding: 5px
-
-.detail
-  font-size: 26
-  margin: 20px 0
 
 .section-text
   margin-bottom: -20px
@@ -301,72 +293,12 @@ li
   transition: 0.3s ease
   -webkit-transition: 0.3s ease
 
-.list
-  max-width: 670px
-  margin: 0 auto
-
-.welcome
-  margin-top: 20px
-  margin-bottom: 20px
-
 .boxes a:hover
   position: relative
 
 .page
   margin-left: 5px
   margin-bottom: 5px
-
-.sf
-  margin-top: 20px
-  margin: 10px
-  display: block
-  max-width: 640px
-  margin-left: auto
-  margin-right: auto
-  border: 1px solid #fff
-
-.cat
-  position: fixed
-  top: 25px
-  margin: 0 auto
-  z-index: 99
-  right: 275px
-  left: 0px
-  width: 250px
-  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-  -webkit-transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-
-.pointers
-  position: fixed
-  top: 25px
-  margin: 0 auto
-  z-index: 99
-  right: 0
-  left: 200px
-  width: 150px
-  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-  -webkit-transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-
-.toggle
-  margin: 0 auto
-  left: 0
-  right: 0
-  top: 25px
-  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-  -webkit-transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-  width: 40px
-  position: fixed
-  z-index: 99
-  text-align: center
-  cursor: pointer
-
-.toggle:hover
-  -webkit-transform: scale(1.1)
-  transform: scale(1.1)
-
-.about
-  max-width: 640px
-  margin: 0 auto
 
 .clear
   clear: both
@@ -377,82 +309,126 @@ li
   margin-left: auto
   margin-right: auto
 
-.active
-  i
-    color: #87b9f3
-    &:hover
-      color: #589eef
-
-ng-show:enter
-  opacity: 0
-  transition: 2s
-
-ng-show:active
-  opacity: 1
-  transition: 2s
-
 ul.thumbs
-  margin: 0
-  float: left
+  margin: 0 auto
+  display: inline-block
   list-style: none
 
 ul.thumbs li
   display: inline-block
-  margin-right: 4px
-  margin-top: 5px
-  border: 1px solid #5f5f5f
-  margin-bottom: 5px
+  text-align: center
+
+ul.thumbs li
+  margin: 0
+  list-style: none
+  padding: 10px
+  margin: 10px 5px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  background-color: #fff
+  transition: .3s
+  &:hover
+    box-shadow: -2px 0 2px 0 rgba(0,0,0,.25), 2px 0 2px 0 rgba(0,0,0,.25), 0 2px 2px 0 rgba(0,0,0,0.25)
+    transform: translate3d(0,-3px,0)
 
 ul.thumbs img
+  width: 7em
 
 img.boxes
   display: none
-  float: left
+  margin: 15px auto
   height: 300px
-  border: 1px solid #5f5f5f
   max-width: 420px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  background-color: #fff
+  transition: .3s
+  &:hover
+    box-shadow: -2px 0 2px 0 rgba(0,0,0,.25), 2px 0 2px 0 rgba(0,0,0,.25), 0 2px 2px 0 rgba(0,0,0,0.25)
+    transform: translate3d(0,-5px,0)
+
+.sidebar img
+  max-width: 140px
+
+.sidebar h3
+  font-size: .7em
+  margin-top: 110px
 
 img.boxes:first-child
   display: block
 
 .links
-  margin-top: 15px
-  margin-bottom: 15px
+  margin: 15px 0
+
+.database
+  display: inline-block
+
+.content
+  width: 600px
+  margin-left: 10px
+  display: inline-block
 
 .content-data
-  width: 25%
-  float: left
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  background-color: #fff
+  margin: 0 auto
+  padding: 15px
+  text-align: center
+
+th, td
+  text-align: center
 
 .content-img
-  width: 70%
-  float: right
+  padding: 15px
+  margin-top: 10px
+  border-radius: 1px
+  border-top: 3px solid lightblue
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  background-color: #fff
 
 /* Footer */
 
 footer
-  background-color: #0c3c73
-  height: 300px
+  background-color: #fff
   font-width: 300
+  font-family: Lato, arial
   position: relative
   width: 100%
+  color: #222
   padding: 5px 20px
-  font-size: 24px
-  color: #fff
-
-.ftext 
-  margin-top: 100px
+  font-size: 1em
+  text-align: center
+  border-radius: 1px
+  box-shadow: -1px 0 2px 0 rgba(0,0,0,.15), 1px 0 2px 0 rgba(0,0,0,.15), 0 1px 1px 0 rgba(0,0,0,0.15)
+  a
+    color: #222
+    &:hover
+      color: #666
 
 ul i
   padding: 0
-  margin: 0
-
-footer a:hover
-  color: #244f81
+  margin: 0 
 
 .navClass
   margin-top: 0px!important
 
-.toggleClass
-  top: 320px
+@media (max-width: 1000px)
+  .list
+    width: 640px
 
-
+@media (max-width: 700px)
+  h1
+    font-size: 1.2em
+  header
+    h1
+      padding: 23px 10px 0 10px
+  .list
+    width: 320px
+  .cat i
+    font-size: 1.2em
+  .cat i.filters
+    font-size: 16px

@@ -22,6 +22,18 @@ dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   };
+
+  $scope.boxes = Box.query();
+  $scope.orderProp = '-height';
+  $scope.currentPage = 0;
+  $scope.pageSize = 10;
+  $scope.numberOfPages = function() {
+    return Math.ceil($scope.boxes.length/$scope.pageSize);
+  };
+  for (var i=0; i<6; i++) {
+    $scope.boxes.push(i);
+  }
+
 }]);
 
 

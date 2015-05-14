@@ -1,0 +1,19 @@
+  <div class="cat" ng-init="activeTab = 'none'">
+    <div class="filters filters-lg" ng-click='filterCriteria={}; currentPage=reset(); activeTab = "none"'>Filters</div>
+    <a ng-class="{'active':activeTab === 'none'}" ng-click='filterCriteria={}; currentPage=reset(); activeTab = "none"' data-toggle="tooltip" data-placement="bottom" title="Reset"><i class="fa fa-ban"></i></a>
+    <a ng-class="{'active':activeTab === 'residential'}" ng-click='filterCriteria.type="residential"; currentPage=reset(); activeTab = "residential"' data-toggle="tooltip" data-placement="bottom" title="Residential"><i class="fa fa-home"></i></a>
+    <a ng-class="{'active':activeTab === 'infrastructure'}" ng-click='filterCriteria.type="infrastructure"; currentPage=reset(); activeTab = "infrastructure"' data-toggle="tooltip" data-placement="bottom" title="Infrastructure"><i class="fa fa-truck"></i></a>
+    <a ng-class="{'active':activeTab === 'office'}" ng-click='filterCriteria.type="office"; currentPage=reset(); activeTab = "office"' data-toggle="tooltip" data-placement="bottom" title="Office"><i class="fa fa-building"></i></a>
+    <a ng-class="{'active':activeTab === 'attraction'}" ng-click='filterCriteria.type="attraction"; currentPage=reset(); activeTab = "attraction"' data-toggle="tooltip" data-placement="bottom" title="Attraction"><i class="fa fa-bank"></i></a>
+  </div>
+
+<div class="list">
+  <div class="boxes repeat-item animate" ng-repeat="box in boxes | filter:filterCriteria | orderBy:orderProp">
+    <a href="#/{{box.id}}" active-link="active">
+      <div class="work">
+        <img class="pull-left" ng-src="{{box.imageUrl}}">
+          <h3>{{box.name}}</h3>
+      </div>
+    </a>
+  </div>
+</div>

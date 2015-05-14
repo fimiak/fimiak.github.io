@@ -1,13 +1,3 @@
-/*=============================================
-=            Gulp Starter by @dope            =
-=============================================*/
-
-/**
-*
-* The packages we are using
-* Not using gulp-load-plugins as it is nice to see whats here.
-*
-**/
 var gulp         = require('gulp');
 var sass         = require('gulp-ruby-sass');
 var browserSync  = require('browser-sync');
@@ -106,7 +96,7 @@ gulp.task('images', function () {
 *
 **/
 gulp.task('default', ['sass', 'browser-sync', 'scripts', 'viewscripts', 'images'], function () {
-  gulp.watch('client/styles//*.sass', ['sass']);
+  gulp.watch('client/styles/*.sass', ['sass']);
   gulp.watch('client/scripts/*.js', ['scripts']);
   gulp.watch('client/views/**/*.js', ['viewscripts']);
   gulp.watch('client/img/*', ['images']);

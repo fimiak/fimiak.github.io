@@ -4,7 +4,8 @@
     "height": "100FT / 30M",
     "type": "Attraction",
     "completion": "2016",
-    "snippet": "A new arena for the Golden State Warriors. The location of the arena has recently been moved to Mission Bay. No new images of this location exist at this time.",
+    "neighborhood": "Mission Bay",
+    "snippet": "A new arena for the Golden State Warriors.",
     "website": "N/A",
     "images": [
       "dist/img/warriors-1.jpg",
