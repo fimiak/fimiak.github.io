@@ -1,10 +1,11 @@
 [
   {
-    "id": "sfdb",
-    "name": "San Francisco DB",
-    "tech": "AngularJS",
-    "image": "client/img/sf.jpg"
+    "id": "livescribe",
+    "name": "Livescribe Inc.",
+    "tech": "jQuery, HTML, CSS",
+    "image": "client/img/livescribe.jpg"
   },
+
    {
     "id": "sudoku",
     "name": "Sudoku",
@@ -23,18 +24,19 @@
     "tech": "jQuery",
     "image": "client/img/bulbphone.png"
   },
-   {
+  {
     "id": "eia",
     "name": "English in America",
     "tech": "WordPress",
     "image": "client/img/eia.png"
   },
-   {
-    "id": "wlb",
-    "name": "World Leader Bulletin",
+  {
+    "id": "sfdb",
+    "name": "San Francisco DB",
     "tech": "AngularJS",
-    "image": "client/img/obama.jpg"
+    "image": "client/img/sf.jpg"
   },
+
   {
     "id": "github",
     "name": "Github",

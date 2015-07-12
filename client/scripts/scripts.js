@@ -12,14 +12,14 @@ $(document).scroll(function() {
 
 $(document).ready(function(){
     $(document).on('click', '.home', function() {
-        $('html, body').animate({scrollTop: 0}, 600);
+        $('html, body').animate({scrollTop: 0}, 200);
         return false;
     }); 
     });
 
 $(document).ready(function(){
     $(document).on('click', '.scroll', function() {
-        $('html, body').animate({scrollTop: 41}, 600);
+        $('html, body').animate({scrollTop: 41}, 200);
         return false;
     }); 
     });
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(document).on('click', '.about', function() {
-        $('html, body').animate({scrollTop: 3000}, 600);
+        $('html, body').animate({scrollTop: 3000}, 400);
         return false;
     }); 
     });

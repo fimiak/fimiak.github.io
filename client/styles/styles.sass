@@ -227,13 +227,19 @@ nav
   min-width: 539px
 
 .box 
-  transition: .5s
+  transition: .3s
   padding: 10px
   height: 440px
   overflow: hidden
+  &:hover
+    padding-top: 15px
   h2
     font-size: 13px
     margin-top: 5px
+  img
+    border: 1px solid transparent
+    &:hover
+      border: 1px solid #ccc
 
 .scroll
   transition: .5s
@@ -277,6 +283,7 @@ footer
     height: 10em
     float: left
     margin-right: 10px
+    border-radius: 15px
 
 .quote
   align-items: center

@@ -1,0 +1,9 @@
+{
+    "id": "livescribe",
+    "name": "Livescribe Inc.",
+    "tech": "jQuery, JavaScript, HTML, CSS",
+    "link": "http://www.livescribe.com",
+    "year": "2015 - Present",
+    "quote": "One member of a three member Web Team.",
+    "images": "../client/img/livescribe.jpg"
+}
