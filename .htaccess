@@ -1,0 +1,4 @@
+//301 Redirect Entire Directory
+RedirectMatch 301 /(.*) /presskit//$1
+
+ErrorDocument 404 /new404.html 
