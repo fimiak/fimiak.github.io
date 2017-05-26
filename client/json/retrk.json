@@ -1,0 +1,9 @@
+{
+    "id": "retrk",
+    "name": "Retrk",
+    "tech": "ReactJS, JavaScript, HTML, CSS",
+    "link": "http://brainy-act.surge.sh/",
+    "year": "2017 - Present",
+    "quote": "A repository of Presidents & Prime Ministers built in React.",
+    "images": "../client/img/rtrk.jpg"
+}
