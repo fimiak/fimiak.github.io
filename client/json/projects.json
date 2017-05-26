@@ -1,11 +1,16 @@
 [
   {
+    "id": "retrk",
+    "name": "Retrk",
+    "tech": "ReactJS, Javascript, HTML, CSS",
+    "image": "client/img/retrk.jpg"
+  },
+   {
     "id": "livescribe",
     "name": "Livescribe Inc.",
     "tech": "jQuery, HTML, CSS",
     "image": "client/img/livescribe.jpg"
   },
-
    {
     "id": "sudoku",
     "name": "Sudoku",
