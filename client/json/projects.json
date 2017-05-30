@@ -1,10 +1,4 @@
 [
-  {
-    "id": "retrk",
-    "name": "Retrk",
-    "tech": "ReactJS, Javascript, HTML, CSS",
-    "image": "client/img/retrk.jpg"
-  },
    {
     "id": "livescribe",
     "name": "Livescribe Inc.",
@@ -53,5 +47,11 @@
     "name": "WordPress",
     "tech": "WordPress",
     "image": "client/img/wordpress.png"
+  },
+  {
+    "id": "retrk",
+    "name": "Retrk",
+    "tech": "ReactJS, Javascript, HTML, CSS",
+    "image": "client/img/retrk.jpg"
   }
 ]
