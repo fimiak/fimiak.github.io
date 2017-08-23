@@ -1,8 +1,14 @@
 [
    {
+    "id": "rtrk",
+    "name": "PresidentPrime",
+    "tech": "ReactJS, Javascript, HTML5, CSS3",
+    "image": "client/img/whitehouse.svg"
+  },
+   {
     "id": "livescribe",
     "name": "Livescribe Inc.",
-    "tech": "jQuery, HTML, CSS",
+    "tech": "HTML5, CSS3, Javascript",
     "image": "client/img/livescribe.jpg"
   },
    {
@@ -47,11 +53,5 @@
     "name": "WordPress",
     "tech": "WordPress",
     "image": "client/img/wordpress.png"
-  },
-  {
-    "id": "rtrk",
-    "name": "Retrk",
-    "tech": "ReactJS, Javascript, HTML, CSS",
-    "image": "client/img/rtrk.jpg"
   }
 ]
