@@ -1,9 +1,9 @@
 {
     "id": "rtrk",
-    "name": "Retrk | Retracker",
+    "name": "PresidentPrime | Tracking Global Leaders",
     "tech": "ReactJS, JavaScript, HTML, CSS",
-    "link": "http://brainy-act.surge.sh/",
+    "link": "http://www.presidentprime.com",
     "year": "2017 - Present",
-    "quote": "A repository of Presidents & Prime Ministers built in React.",
-    "images": "../client/img/rtrk.jpg"
+    "quote": "A site for tracking world leaders using ReactJS and data from various public APIs.",
+    "images": "../client/img/whitehouse.svg"
 }
