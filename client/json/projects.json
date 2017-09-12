@@ -1,15 +1,15 @@
 [
    {
-    "id": "rtrk",
-    "name": "PresidentPrime",
-    "tech": "ReactJS, Javascript, HTML5, CSS3",
-    "image": "client/img/whitehouse.svg"
-  },
-   {
     "id": "livescribe",
     "name": "Livescribe Inc.",
     "tech": "HTML5, CSS3, Javascript",
     "image": "client/img/livescribe.jpg"
+  },
+  {
+    "id": "rtrk",
+    "name": "PresidentPrime",
+    "tech": "ReactJS, Javascript, HTML5, CSS3",
+    "image": "client/img/whitehouse.svg"
   },
    {
     "id": "sudoku",
@@ -30,18 +30,17 @@
     "image": "client/img/bulbphone.png"
   },
   {
-    "id": "eia",
-    "name": "English in America",
-    "tech": "WordPress",
-    "image": "client/img/eia.png"
-  },
-  {
     "id": "sfdb",
     "name": "San Francisco DB",
     "tech": "AngularJS",
     "image": "client/img/sf.jpg"
   },
-
+  {
+    "id": "eia",
+    "name": "English in America",
+    "tech": "WordPress",
+    "image": "client/img/eia.png"
+  },
   {
     "id": "github",
     "name": "Github",

@@ -57,7 +57,7 @@ h1, h2
 h1
   font-size: 1.75em
   text-align: center
-  padding: 60px 0 40px 0
+  padding: 40px 0
 
 
 h2
@@ -75,7 +75,6 @@ ul
 
 hr
   text-align: center
-  border: 1px dotted #8c8b8b
   opacity: .5
   margin: 2% 0
 
@@ -216,6 +215,7 @@ nav
   img
     width: 257px
     height: 385px
+    background: #FFF
   a
     border-bottom: none
     &:hover h2
@@ -261,7 +261,7 @@ nav
   display: block
   font-family: $sans
   margin: 40px 0px
-  width: 160px
+  width: 200px
   background-color: rgba(0,0,0,.1)
   color: #000
   transition: .3s
@@ -276,7 +276,7 @@ footer
     display: flex
     flex-direction: column
     span
-      font-size: 2.1em
+      font-size: 2em
       font-family: $serif
   img
     min-width: 10em
@@ -295,6 +295,10 @@ footer
 .foot
   width: 24%
   padding: 0 1%
+
+.fa
+  width: 30px
+  text-align: right
 
 .foot h3
   margin: 10px 0
@@ -323,6 +327,7 @@ footer
   -webkit-justify-content: center
   a
     font-size: 1.1em
+    margin-top: 15px
 
 .foot:nth-child(3), .foot:nth-child(4)
   align-items: flex-end
