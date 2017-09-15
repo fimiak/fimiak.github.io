@@ -1,9 +1,9 @@
 {
     "id": "safeti",
     "name": "Safeti",
-    "tech": "jQuery",
-    "link": "http://safeti.me",
-    "year": "2014",
+    "tech": "HTML, CSS, jQuery",
+    "link": "http://jamesgreve.com",
+    "year": "2014 -- SITE DOWN",
     "quote": "I created a front end for a kickstarter project, the Safeti personal safety device. Can communicate with police or with a designated loved one.",
     "images": "../client/img/safeti.jpg"
 }

@@ -1,7 +1,7 @@
 {
     "id": "rtrk",
     "name": "PresidentPrime | Tracking Global Leaders",
-    "tech": "ReactJS, JavaScript, HTML, CSS",
+    "tech": "HTML, CSS, React",
     "link": "http://www.presidentprime.com",
     "year": "2017 - Present",
     "quote": "A site for tracking world leaders using ReactJS and data from various public APIs.",

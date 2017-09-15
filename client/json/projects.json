@@ -2,55 +2,49 @@
    {
     "id": "livescribe",
     "name": "Livescribe Inc.",
-    "tech": "HTML5, CSS3, Javascript",
+    "tech": "HTML, CSS, Javascript",
     "image": "client/img/livescribe.jpg"
   },
   {
     "id": "rtrk",
     "name": "PresidentPrime",
-    "tech": "ReactJS, Javascript, HTML5, CSS3",
+    "tech": "HTML, CSS, React",
     "image": "client/img/whitehouse.svg"
   },
    {
     "id": "sudoku",
     "name": "Sudoku",
-    "tech": "JavaScript",
+    "tech": "HTML, CSS, Javascript",
     "image": "client/img/sudoku.png"
   },
    {
     "id": "safeti",
     "name": "Safeti",
-    "tech": "jQuery",
+    "tech": "HTML, CSS, jQuery",
     "image": "client/img/safeti.jpg"
   },
    {
     "id": "emberlight",
     "name": "Emberlight",
-    "tech": "jQuery",
+    "tech": "HTML, CSS, jQuery",
     "image": "client/img/bulbphone.png"
   },
   {
     "id": "sfdb",
     "name": "San Francisco DB",
-    "tech": "AngularJS",
+    "tech": "HTML, CSS, AngularJS",
     "image": "client/img/sf.jpg"
-  },
-  {
-    "id": "eia",
-    "name": "English in America",
-    "tech": "WordPress",
-    "image": "client/img/eia.png"
   },
   {
     "id": "github",
     "name": "Github",
-    "tech": "Various",
+    "tech": "HTML, CSS, Javascript",
     "image": "client/img/github.jpg"
   },
   {
     "id": "wordpress",
     "name": "WordPress",
-    "tech": "WordPress",
+    "tech": "HTML, CSS, WordPress",
     "image": "client/img/wordpress.png"
   }
 ]
